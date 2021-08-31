@@ -1,13 +1,13 @@
 <div class="page-width feature-row">
 
-  <div class="feature-row">
+  <div class="feature-row text-center">
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
       {% if section.settings.title_1 != blank %}
         <h2>{{ section.settings.title_1 | escape }}</h2>
       {% endif %}
       {% if section.settings.text_1 != blank %}
-        <div class="rte featured-row__subtext">{{ section.settings.text_1 }}</div>
+        <div class="rte featured-row__text">{{ section.settings.text_1 }}</div>
       {% endif %}
       {% if section.settings.button_label_1 != blank and section.settings.button_link_1 != blank %}
         <a href="{{ section.settings.button_link_1 }}" class="btn">
@@ -21,7 +21,7 @@
         <h2>{{ section.settings.title_2 | escape }}</h2>
       {% endif %}
       {% if section.settings.text_2 != blank %}
-        <div class="rte featured-row__subtext">{{ section.settings.text_2 }}</div>
+        <div class="rte featured-row__text">{{ section.settings.text_2 }}</div>
       {% endif %}
       {% if section.settings.button_label_2 != blank and section.settings.button_link_2 != blank %}
         <a href="{{ section.settings.button_link_2 }}" class="btn">
@@ -246,7 +246,7 @@
         "cs": "Obrázek s textem",
         "da": "Billede med tekst",
         "de": "Foto mit Text",
-        "en": "Heading One",
+        "en": "Heading Two",
         "es": "Imagen con texto",
         "fi": "Kuva tekstillä",
         "fr": "Image avec texte",
