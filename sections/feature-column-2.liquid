@@ -27,8 +27,6 @@
                      alt="{{ section.settings.image_1.alt | escape }}">
               </div>
             </div>
-          {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
         </div>
       {% endcapture %}
@@ -73,8 +71,6 @@
                      alt="{{ section.settings.image_2.alt | escape }}">
               </div>
             </div>
-          {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
         </div>
       {% endcapture %}
