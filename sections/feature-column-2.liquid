@@ -54,18 +54,18 @@
         <div class="feature-row__item">
           {% if section.settings.image_2 != blank %}
             <noscript>
-              {{ section.settings.image_2 | img_url: '300x150' | img_tag: section.settings.image_2.alt }}
+              {{ section.settings.image_2 | img_url: '150x150' | img_tag: section.settings.image_2.alt }}
             </noscript>
 
             {% capture img_id %}FeatureRowImage--2-{{ section.id }}{% endcapture %}
             {% capture img_wrapper_id %}FeatureRowImageWrapper--2-{{ section.id }}{% endcapture %}
-            {% include 'image-style' with image: section.settings.image_2, width: 300, height: 150, wrapper_id: img_wrapper_id, img_id: img_id %}
+            {% include 'image-style' with image: section.settings.image_2, width: 150, height: 150, wrapper_id: img_wrapper_id, img_id: img_id %}
             {%- assign img_url = section.settings.image_2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <div id="{{ img_wrapper_id }}" class="feature-row__image-wrapper supports-js">
               <div style="padding-top:{{ 1 | divided_by: section.settings.image_2.aspect_ratio | times: 100}}%;">
                 <img id="{{ img_id }}"
                      class="feature-row__image lazyload"
-                     src="{{ section.settings.image_2 | img_url: '300x150' }}"
+                     src="{{ section.settings.image_2 | img_url: '150x150' }}"
                      data-src="{{ img_url }}"
                      data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
                      data-aspectratio="{{ section.settings.image_2.aspect_ratio }}"
