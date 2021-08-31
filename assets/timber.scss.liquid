@@ -2656,8 +2656,19 @@ aside time em {
 
 #account-dropdown {
 
+  position: relative;
+
   ul {
     display: none;
+    position: absolute;
+    right: 0;
+    min-width: 150px;
+    background-color: $colorBody;
+    z-index: 10;
+
+    li {
+      display: block;
+    }
   }
 
   &:hover {

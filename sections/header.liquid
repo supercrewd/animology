@@ -249,13 +249,10 @@
           <div class="grid__item post-large--one-third post-large--display-table-cell medium-down--hide text-right">
 
             {% if shop.customer_accounts_enabled %}
-              <div id="account-dropdown">
+              <div id="account-dropdown" class="header-bar__module">
                 <a href="#"><span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span> Account</a>
                 <ul class="header-bar__module header-bar__module--list">
                 {% if customer %}
-                  <li>
-                    <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
-                  </li>
                   <li>
                     <a href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a>
                   </li>
@@ -264,12 +261,8 @@
                   </li>
                 {% else %}
                   <li>
-                    <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
-                  </li>
-                  <li>
                     {{ 'layout.customer.log_in' | t | customer_login_link }}
                   </li>
-                  <li>{{ 'layout.customer.or' | t }}</li>
                   <li>
                     {{ 'layout.customer.create_account' | t | customer_register_link }}
                   </li>
