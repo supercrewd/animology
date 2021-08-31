@@ -1690,6 +1690,8 @@ $badgeSize: 60px;
 .feature-row__text {
   padding-top: $section-spacing-small;
   padding-bottom: $section-spacing-small;
+  padding-left: $section-spacing-small;
+  padding-right: $section-spacing-small;
 
   @include at-query ($max, $medium) {
     order: 2;
