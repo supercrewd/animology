@@ -228,9 +228,9 @@ $breakpoints: (
   'small' '(max-width: #{$small})',
   'medium' '(min-width: #{$postSmall}) and (max-width: #{$medium})',
   'medium-down' '(max-width: #{$medium})',
-
+  
   'large' '(min-width: #{$large}) and (max-width: #{$wide})',
-
+  
   'post-large' '(min-width: #{$large})',
   'wide' '(min-width: #{$wide})'
 );
@@ -264,7 +264,7 @@ $colorTopBarText: #ffffff;
 $colorBody: #ffffff;
 $colorHeader: transparent;
 $colorTopBar: #212121;
-$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/4/assets/password-page-background.jpg?v=12987344696580752000';
+$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/password-page-background.jpg?v=12987344696580752000';
 
 // Border colors
 $colorBorder: #ebebeb;
@@ -294,78 +294,78 @@ $passwordPageUseBgImage: true;
 
 
 @font-face {
-  font-family: Karla;
+  font-family: Helvetica;
   font-weight: 400;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/karla/karla_n4.187fb228d0a8055289c8663e90433b4a50e86848.woff2?&hmac=ffe3e015e666d2019f4e12cb37922856fae8b1ac9dbaf0a9d0d6c7aad7626a4f") format("woff2"),
-       url("https://fonts.shopifycdn.com/karla/karla_n4.24ba61101c1ba185880bec9c74d8e7cdb826ad49.woff?&hmac=78989244295ec5ecbdae9447111d9a01ae2f46d9d622aa16d6e7963fdaeb7982") format("woff");
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?&hmac=64c57d7fee8da8223a0d4856285068c02c248ef210cae57dcd9c3e633375e8a4") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?&hmac=f74109e3105603c8a8cfbd8dec4e8a7e53572346fb96aacec203fc3881ddabf1") format("woff");
 }
 
 @font-face {
-  font-family: Cabin;
+  font-family: Helvetica;
   font-weight: 400;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/cabin/cabin_n4.90cfc8efed7ff88f02d58b22d38933ec75887560.woff2?&hmac=255f686d6acd9c94d8b5c42ce1dfb6f21d8e4f6ea5fb1363b2d6f41bdeddfeeb") format("woff2"),
-       url("https://fonts.shopifycdn.com/cabin/cabin_n4.9f337ab91288ce417d0a6abd954e1d9f876868b7.woff?&hmac=e11ba541e98a5818eedd1842d9fe16482fcf5aa818d54386ffbd086b669b2ca2") format("woff");
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?&hmac=64c57d7fee8da8223a0d4856285068c02c248ef210cae57dcd9c3e633375e8a4") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?&hmac=f74109e3105603c8a8cfbd8dec4e8a7e53572346fb96aacec203fc3881ddabf1") format("woff");
 }
 
 @font-face {
-  font-family: Karla;
+  font-family: Helvetica;
   font-weight: 400;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/karla/karla_n4.187fb228d0a8055289c8663e90433b4a50e86848.woff2?&hmac=ffe3e015e666d2019f4e12cb37922856fae8b1ac9dbaf0a9d0d6c7aad7626a4f") format("woff2"),
-       url("https://fonts.shopifycdn.com/karla/karla_n4.24ba61101c1ba185880bec9c74d8e7cdb826ad49.woff?&hmac=78989244295ec5ecbdae9447111d9a01ae2f46d9d622aa16d6e7963fdaeb7982") format("woff");
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?&hmac=64c57d7fee8da8223a0d4856285068c02c248ef210cae57dcd9c3e633375e8a4") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?&hmac=f74109e3105603c8a8cfbd8dec4e8a7e53572346fb96aacec203fc3881ddabf1") format("woff");
 }
 
 @font-face {
-  font-family: Cabin;
+  font-family: Helvetica;
   font-weight: 700;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/cabin/cabin_n7.3703a1f5733b06a58cf91470aca19cfd07978070.woff2?&hmac=0d420ed5fe013a2c90dbc4ff507bdcf31356d110a1c4455b188ca574cdbc6b8a") format("woff2"),
-       url("https://fonts.shopifycdn.com/cabin/cabin_n7.a7351ebf59c46b409ece4ca0912c23a7c55df1ed.woff?&hmac=bc22d92779931f45e2569e9f98f39a08ab50f5f7b1091d46ec68ef389b6c0dbb") format("woff");
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?&hmac=b99c35ba03edd5495ba7af87326d5fe8af5b2363f485475338ae16401b9af50d") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?&hmac=684bc7a600f408db705c8f9b90d3d964d22c13a8ce7492386d351a852f30309b") format("woff");
 }
 
 @font-face {
-  font-family: Cabin;
+  font-family: Helvetica;
   font-weight: 400;
-  font-style: italic;
-  src: url("https://fonts.shopifycdn.com/cabin/cabin_i4.d842691f340f784c85693accd3cc7aaa6af9102a.woff2?&hmac=bf0c4dbd525db0e101fa92448887e5242a3e8c6e1b5c6556fc6576b84ed4fd43") format("woff2"),
-       url("https://fonts.shopifycdn.com/cabin/cabin_i4.410154aaffb1849b1cbebd17c230958bfb5a02af.woff?&hmac=abb10069d334af2d88085aa4e9d6dc90792b77cbd29d52b6307e913453207160") format("woff");
+  font-style: oblique;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_o4.f9832a0fc1ee8fc5a359636e410d6941e1e4ca03.woff2?&hmac=775a8a34e13ea386c331d51fd5f061993cd3135ce54cc4ed2b9254f3a3be05df") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_o4.0063286aec443697ebae04eeb9c78b820f9f7805.woff?&hmac=32c2cf4f29cdfb274d76aeb45a9a8b5c97eb6a9255cc2073ee5c1a85140ad7fe") format("woff");
 }
 
 @font-face {
-  font-family: Cabin;
+  font-family: Helvetica;
   font-weight: 700;
-  font-style: italic;
-  src: url("https://fonts.shopifycdn.com/cabin/cabin_i7.06cbf354eb07f0abe4e75bdac05ba290fb6a01a1.woff2?&hmac=2d30d01e01fc93f90d4a067e326d8fd2be494eb43dcdbeff1e24cc05cdfd86b7") format("woff2"),
-       url("https://fonts.shopifycdn.com/cabin/cabin_i7.54615379d83f676a3e0def67c629135eca2c6971.woff?&hmac=0f03cbe6d2c97571dced24a7d289b2218cc1d2daedddcf76dc9c385b74d7055f") format("woff");
+  font-style: oblique;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.215fd4ca1a06214fa01e44328a1992c977700ea2.woff2?&hmac=b7d9523eaf6b1e57f158595303d5e41e66c07d43212d2fbfe8df1f4b7d6c1f79") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.b0a2026ae2aa64d060f9ce0ee1b3c3c1aa21bf88.woff?&hmac=97dc9f03549c58cc74feee46ffde68daa822080823ae1159e9cd489daf68bcb9") format("woff");
 }
 
 @font-face {
-  font-family: Karla;
+  font-family: Helvetica;
   font-weight: 700;
   font-style: normal;
-  src: url("https://fonts.shopifycdn.com/karla/karla_n7.e8c0eb897464ccf45d5caa70ec8c7005d0f7b1b2.woff2?&hmac=1dcb79031b83d04b4a6b25afa94e4aa8306fa63ce0ec61d8ea59502432332b95") format("woff2"),
-       url("https://fonts.shopifycdn.com/karla/karla_n7.98d31f084a84db1ace8d046ddc8faa522b144349.woff?&hmac=1eb2ce6cfec5c13b83614cf37cf557231b848e48137c9657453b24decad02a9c") format("woff");
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?&hmac=b99c35ba03edd5495ba7af87326d5fe8af5b2363f485475338ae16401b9af50d") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?&hmac=684bc7a600f408db705c8f9b90d3d964d22c13a8ce7492386d351a852f30309b") format("woff");
 }
 
 
 // Body Font
-$bodyFontStack: Cabin, sans-serif;
+$bodyFontStack: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 $bodyFontWeight: 400;
 $bodyFontWeightBold: 700;
 $bodyFontStyle: normal;
-$bodyFontItalic: italic;
-$baseFontSize: 17px;
+$bodyFontItalic: oblique;
+$baseFontSize: 16px;
 
 // Header Font
-$headerFontStack: Karla, sans-serif;
+$headerFontStack: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 $headerFontWeight: 400;
 $headerFontStyle: normal;
 $headerBaseFontSize: 32px;
 
 // Navigation and buttons
-$accentFontStack: Karla, sans-serif;
+$accentFontStack: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 $accentFontWeight: 400;
 $accentFontWeightBold: 700;
 $accentFontStyle: normal;
@@ -1020,7 +1020,7 @@ html, body { background: $colorBody; }
   border: 1px solid $colorBorder;
   border-radius: $radius;
   min-width: 100px;
-  font-size: 0.82353em; 
+  font-size: 0.82353em;
 
   @include at-query($min, $large) {
     max-width: 160px;
