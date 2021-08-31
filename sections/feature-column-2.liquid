@@ -54,7 +54,7 @@
         <div class="feature-row__item">
           {% if section.settings.image_2 != blank %}
             <noscript>
-              {{ section.settings.image_2 | img_url: '400x300' | img_tag: section.settings.image_2.alt }}
+              {{ section.settings.image_2 | img_url: '300x150' | img_tag: section.settings.image_2.alt }}
             </noscript>
 
             {% capture img_id %}FeatureRowImage--2-{{ section.id }}{% endcapture %}
