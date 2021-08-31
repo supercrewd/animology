@@ -248,13 +248,33 @@
           </div>
           <div class="grid__item post-large--one-third post-large--display-table-cell medium-down--hide text-right">
 
-            <div class="header-bar__module">
-              <span class="header-bar__sep" aria-hidden="true"></span>
-              [Account]
-              <a href="#" class="account-page-link">
-                <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
-              </a>
-            </div>
+            {% if shop.customer_accounts_enabled %}
+              <ul class="header-bar__module header-bar__module--list">
+                {% if customer %}
+                  <li>
+                    <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
+                  </li>
+                  <li>
+                    <a href="{{ routes.account_url }}">{{ 'layout.customer.account' | t }}</a>
+                  </li>
+                  <li>
+                    {{ 'layout.customer.log_out' | t | customer_logout_link }}
+                  </li>
+                {% else %}
+                  <li>
+                    <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
+                  </li>
+                  <li>
+                    {{ 'layout.customer.log_in' | t | customer_login_link }}
+                  </li>
+                  <li>{{ 'layout.customer.or' | t }}</li>
+                  <li>
+                    {{ 'layout.customer.create_account' | t | customer_register_link }}
+                  </li>
+                {% endif %}
+              </ul>
+            {% endif %}
+            
 
             <div class="header-bar__module">
               <span class="header-bar__sep" aria-hidden="true"></span>
