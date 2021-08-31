@@ -3,6 +3,36 @@
   <div class="feature-row text-center">
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
+
+      {% capture image_layout %}
+        <div class="feature-row__item">
+          {% if section.settings.image_1 != blank %}
+            <noscript>
+              {{ section.settings.image_1 | img_url: '640x640' | img_tag: section.settings.image_1.alt }}
+            </noscript>
+
+            {% capture img_id %}FeatureRowImage--{{ section.id }}{% endcapture %}
+            {% capture img_wrapper_id %}FeatureRowImageWrapper--{{ section.id }}{% endcapture %}
+            {% include 'image-style' with image: section.settings.image_1, width: 700, height: 640, wrapper_id: img_wrapper_id, img_id: img_id %}
+            {%- assign img_url = section.settings.image_1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <div id="{{ img_wrapper_id }}" class="feature-row__image-wrapper supports-js">
+              <div style="padding-top:{{ 1 | divided_by: section.settings.image_1.aspect_ratio | times: 100}}%;">
+                <img id="{{ img_id }}"
+                     class="feature-row__image lazyload"
+                     src="{{ section.settings.image_1 | img_url: '300x300' }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                     data-aspectratio="{{ section.settings.image_1.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="{{ section.settings.image_1.alt | escape }}">
+              </div>
+            </div>
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+      {% endcapture %}
+
       {% if section.settings.title_1 != blank %}
         <h2>{{ section.settings.title_1 | escape }}</h2>
       {% endif %}
@@ -17,6 +47,36 @@
     </div>
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
+
+      {% capture image_layout %}
+        <div class="feature-row__item">
+          {% if section.settings.image_2 != blank %}
+            <noscript>
+              {{ section.settings.image_2 | img_url: '640x640' | img_tag: section.settings.image_2.alt }}
+            </noscript>
+
+            {% capture img_id %}FeatureRowImage--{{ section.id }}{% endcapture %}
+            {% capture img_wrapper_id %}FeatureRowImageWrapper--{{ section.id }}{% endcapture %}
+            {% include 'image-style' with image: section.settings.image_2, width: 700, height: 640, wrapper_id: img_wrapper_id, img_id: img_id %}
+            {%- assign img_url = section.settings.image_2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <div id="{{ img_wrapper_id }}" class="feature-row__image-wrapper supports-js">
+              <div style="padding-top:{{ 1 | divided_by: section.settings.image_2.aspect_ratio | times: 100}}%;">
+                <img id="{{ img_id }}"
+                     class="feature-row__image lazyload"
+                     src="{{ section.settings.image_2 | img_url: '300x300' }}"
+                     data-src="{{ img_url }}"
+                     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                     data-aspectratio="{{ section.settings.image_2.aspect_ratio }}"
+                     data-sizes="auto"
+                     alt="{{ section.settings.image_2.alt | escape }}">
+              </div>
+            </div>
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+      {% endcapture %}
+
       {% if section.settings.title_2 != blank %}
         <h2>{{ section.settings.title_2 | escape }}</h2>
       {% endif %}
@@ -62,6 +122,33 @@
   },
   "class": "index-section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": {
+        "cs": "Obrázek",
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image 1",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pl": "Obraz",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "tr": "Görsel",
+        "vi": "Hình ảnh",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
+      }
+    },
     {
       "type": "text",
       "id": "title_1",
@@ -214,6 +301,33 @@
         "vi": "Liên kết trên nút",
         "zh-CN": "按钮链接",
         "zh-TW": "按鈕連結"
+      }
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": {
+        "cs": "Obrázek",
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image 1",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pl": "Obraz",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "tr": "Görsel",
+        "vi": "Hình ảnh",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
       }
     },
     {
