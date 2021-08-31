@@ -235,9 +235,9 @@ $breakpoints: (
   'small' '(max-width: #{$small})',
   'medium' '(min-width: #{$postSmall}) and (max-width: #{$medium})',
   'medium-down' '(max-width: #{$medium})',
-  
+
   'large' '(min-width: #{$large}) and (max-width: #{$wide})',
-  
+
   'post-large' '(min-width: #{$large})',
   'wide' '(min-width: #{$wide})'
 );
@@ -1854,7 +1854,7 @@ $socialIconFontStack: "icons";
   @include at-query($min, $medium) {
     input {
       max-width: 250px;
-    }   
+    }
   }
 
   .text-center input {
@@ -2300,7 +2300,7 @@ $socialIconFontStack: "icons";
   @include accentFontStack;
   cursor: default;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 
   li {
     margin: 0;
@@ -2686,3 +2686,5 @@ aside time em {
   font-size: em(12px);
 }
 
+
+/*======================== Misc ====================*/
