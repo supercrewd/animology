@@ -249,7 +249,9 @@
           <div class="grid__item post-large--one-third post-large--display-table-cell medium-down--hide text-right">
 
             {% if shop.customer_accounts_enabled %}
-              <ul class="header-bar__module header-bar__module--list">
+              <div id="account-dropdown">
+                <a href="#"><span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span> Account</a>
+                <ul class="header-bar__module header-bar__module--list">
                 {% if customer %}
                   <li>
                     <span class="icon icon-user header-bar__user-icon" aria-hidden="true"></span>
@@ -273,8 +275,9 @@
                   </li>
                 {% endif %}
               </ul>
+              </div>
             {% endif %}
-            
+
 
             <div class="header-bar__module">
               <span class="header-bar__sep" aria-hidden="true"></span>
