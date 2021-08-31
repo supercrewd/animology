@@ -1020,7 +1020,7 @@ html, body { background: $colorBody; }
   border: 1px solid $colorBorder;
   border-radius: $radius;
   min-width: 100px;
-  font-size: 0.82353em;
+  font-size: 0.82353em; 
 
   @include at-query($min, $large) {
     max-width: 160px;
