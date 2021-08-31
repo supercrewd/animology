@@ -4,7 +4,7 @@
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
 
-      {% capture image_layout %}
+      {% capture image_layout_1 %}
         <div class="feature-row__item">
           {% if section.settings.image_1 != blank %}
             <noscript>
@@ -33,6 +33,8 @@
         </div>
       {% endcapture %}
 
+      {{ image_layout_1 }}
+
       {% if section.settings.title_1 != blank %}
         <h2>{{ section.settings.title_1 | escape }}</h2>
       {% endif %}
@@ -48,7 +50,7 @@
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
 
-      {% capture image_layout %}
+      {% capture image_layout_2 %}
         <div class="feature-row__item">
           {% if section.settings.image_2 != blank %}
             <noscript>
@@ -76,6 +78,8 @@
           {% endif %}
         </div>
       {% endcapture %}
+
+      {{ image_layout_2 }}
 
       {% if section.settings.title_2 != blank %}
         <h2>{{ section.settings.title_2 | escape }}</h2>
@@ -310,7 +314,7 @@
         "cs": "Obrázek",
         "da": "Billede",
         "de": "Foto",
-        "en": "Image 1",
+        "en": "Image 2",
         "es": "Imagen",
         "fi": "Kuva",
         "fr": "Image",
