@@ -228,9 +228,9 @@ $breakpoints: (
   'small' '(max-width: #{$small})',
   'medium' '(min-width: #{$postSmall}) and (max-width: #{$medium})',
   'medium-down' '(max-width: #{$medium})',
-
+  
   'large' '(min-width: #{$large}) and (max-width: #{$wide})',
-
+  
   'post-large' '(min-width: #{$large})',
   'wide' '(min-width: #{$wide})'
 );
@@ -264,7 +264,7 @@ $colorTopBarText: #ffffff;
 $colorBody: #ffffff;
 $colorHeader: transparent;
 $colorTopBar: #212121;
-$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/4/assets/password-page-background.jpg?v=12987344696580752000';
+$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/password-page-background.jpg?v=12987344696580752000';
 
 // Border colors
 $colorBorder: #ebebeb;
@@ -1020,7 +1020,7 @@ html, body { background: $colorBody; }
   border: 1px solid $colorBorder;
   border-radius: $radius;
   min-width: 100px;
-  font-size: 0.82353em; 
+  font-size: 0.82353em;
 
   @include at-query($min, $large) {
     max-width: 160px;
