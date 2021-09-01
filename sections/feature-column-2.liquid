@@ -1,6 +1,18 @@
 <div class="page-width feature-row">
 
-  <div class="feature-row text-center">
+  {% capture flex_alignment %}
+
+  {% if section.settings.alignment == 'top' %}
+    align-top
+  {% endif %}
+  {% if section.settings.alignment == 'center' %}
+    align-center
+  {% endif %}
+
+  {% endcapture %}
+
+
+  <div class="feature-row text-center {{ flex_alignment }}">
 
     <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
 
@@ -122,6 +134,88 @@
   },
   "class": "index-section",
   "settings": [
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": {
+        "cs": "Zarovnání obrázku",
+        "da": "Justering af billede",
+        "de": "Fotoausrichtung",
+        "en": "Alignment",
+        "es": "Alineación de imagen",
+        "fi": "Kuvan tasaus",
+        "fr": "Alignement de l'image",
+        "it": "Allineamento immagine",
+        "ja": "画像アラインメント",
+        "ko": "이미지 정렬",
+        "nb": "Bildejustering",
+        "nl": "Afbeelding uitlijnen",
+        "pl": "Wyrównanie obrazu",
+        "pt-BR": "Alinhamento da imagem",
+        "pt-PT": "Alinhamento da imagem",
+        "sv": "Bildjustering",
+        "th": "การจัดวางรูปภาพ",
+        "tr": "Görsel hizalaması",
+        "vi": "Căn chỉnh hình ảnh",
+        "zh-CN": "图片对齐方式",
+        "zh-TW": "圖片對齊"
+      },
+      "default": "center",
+      "options": [
+        {
+          "value": "center",
+          "label": {
+            "cs": "Doleva",
+            "da": "Venstre",
+            "de": "Links",
+            "en": "Center",
+            "es": "Izquierda",
+            "fi": "Vasen",
+            "fr": "Gauche",
+            "it": "Sinistra",
+            "ja": "左",
+            "ko": "왼쪽",
+            "nb": "Venstre",
+            "nl": "Links",
+            "pl": "Do lewej",
+            "pt-BR": "Esquerda",
+            "pt-PT": "Esquerda",
+            "sv": "Vänster",
+            "th": "ด้านซ้าย",
+            "tr": "Sol",
+            "vi": "Bên trái",
+            "zh-CN": "左侧",
+            "zh-TW": "左方"
+          }
+        },
+        {
+          "value": "top",
+          "label": {
+            "cs": "Doprava",
+            "da": "Højre",
+            "de": "Rechts",
+            "en": "Top",
+            "es": "Derecha",
+            "fi": "Oikea",
+            "fr": "Droite",
+            "it": "Destra",
+            "ja": "右",
+            "ko": "오른쪽",
+            "nb": "Høyre",
+            "nl": "Rechts",
+            "pl": "Do prawej",
+            "pt-BR": "Direita",
+            "pt-PT": "Direita",
+            "sv": "Höger",
+            "th": "ด้านขวา",
+            "tr": "Sağ",
+            "vi": "Bên phải",
+            "zh-CN": "右侧",
+            "zh-TW": "右方"
+          }
+        }
+      ]
+    },
     {
       "type": "image_picker",
       "id": "image_1",

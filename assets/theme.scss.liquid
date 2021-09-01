@@ -950,6 +950,18 @@ html, body { background: $colorBody; }
 
 .cart-page-link {
   display: inline-block;
+
+  text-decoration: none;
+  color: $colorNavText;
+  background-color: $colorBody;
+  font-weight: $accentFontWeight;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $colorPrimary;
+  }
+
 }
 
 .header-bar__cart-icon {
@@ -1614,6 +1626,10 @@ $badgeSize: 60px;
 
   @include at-query ($max, $medium) {
     @include flex-wrap(wrap);
+  }
+
+  &.align-top {
+    @include align-items(normal);
   }
 }
 
