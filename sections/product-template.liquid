@@ -230,6 +230,11 @@
                   <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
                 </li>
                 {% endif %}
+                {% if product.metafields.teegee.product_benefits %}
+                <li>
+                  <a href="#product_benefits" data-link="product_benefits" class="tab-switch__trigger h3">Benefits</a>
+                </li>
+                {% endif %}
                 <li>
                   <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a>
                 </li>
@@ -247,6 +252,15 @@
                 <div class="rte">
                   <hr />
                   {{ product.metafields.teegee.product_ingredients }}
+                  <hr />
+                </div>
+              </div>
+              {% endif %}
+              {% if product.metafields.teegee.product_benefits %}
+              <div id="product_benefits" class="tab-switch__content" data-content="product_benefits">
+                <div class="rte">
+                  <hr />
+                  {{ product.metafields.teegee.product_benefits }}
                   <hr />
                 </div>
               </div>
