@@ -192,25 +192,31 @@
           "a42be402-1539-40ee-a1d4-542d29d6234c": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "cat"
             }
           },
           "8a86ff09-4737-449b-9b0c-cc5d0358a764": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "dog"
             }
           },
           "501d92b0-4bce-4546-9e66-6cd33b02bc19": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "vitamins-supplements"
             }
           },
           "6702cb0f-3bd6-4e96-80d2-ae818c780abf": {
             "type": "collection",
             "settings": {
-              "collection": ""
+              "collection": "shampoos"
+            }
+          },
+          "5c8baefc-de37-47cb-978a-9b17fae18628": {
+            "type": "collection",
+            "settings": {
+              "collection": "sprays"
             }
           }
         },
@@ -218,7 +224,8 @@
           "a42be402-1539-40ee-a1d4-542d29d6234c",
           "8a86ff09-4737-449b-9b0c-cc5d0358a764",
           "501d92b0-4bce-4546-9e66-6cd33b02bc19",
-          "6702cb0f-3bd6-4e96-80d2-ae818c780abf"
+          "6702cb0f-3bd6-4e96-80d2-ae818c780abf",
+          "5c8baefc-de37-47cb-978a-9b17fae18628"
         ],
         "settings": {
           "title": ""
@@ -236,7 +243,7 @@
         "type": "featured-collection",
         "settings": {
           "title": "Featured Products",
-          "featured_collection": "dog-1",
+          "featured_collection": "featured-products",
           "num_per_row": 4,
           "num_rows": 1,
           "vendor_enable": false,
@@ -249,7 +256,7 @@
         "type": "featured-collection",
         "settings": {
           "title": "Best Sellers",
-          "featured_collection": "frontpage",
+          "featured_collection": "best-sellers",
           "num_per_row": 4,
           "num_rows": 1,
           "vendor_enable": false,
