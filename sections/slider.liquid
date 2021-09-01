@@ -120,7 +120,7 @@
                       {{ block.settings.slide_heading | escape }}
                     </h2>
                     {% if section.settings.text_1 != blank %}
-                      {{ section.settings.text_1 }}
+                      {{ section.settings.text_1 | escape }}
                     {% endif %}
                   {%- endunless -%}
                   {%- if show_link_button -%}
