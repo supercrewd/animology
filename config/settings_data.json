@@ -64,8 +64,15 @@
           "footer-1": {
             "type": "menu",
             "settings": {
-              "menu_title": "Links",
+              "menu_title": "Quick Links",
               "menu": "footer"
+            }
+          },
+          "1ea06915-ed1c-4376-bb3c-33cd06fade5b": {
+            "type": "menu",
+            "settings": {
+              "menu_title": "Customer Service",
+              "menu": "customer-service"
             }
           },
           "footer-2": {
@@ -82,6 +89,7 @@
         },
         "block_order": [
           "footer-1",
+          "1ea06915-ed1c-4376-bb3c-33cd06fade5b",
           "footer-2",
           "footer-3"
         ],
@@ -268,12 +276,13 @@
       "163041026134736680": {
         "type": "feature-column-2",
         "settings": {
-          "image_1": "shopify:\/\/shop_images\/animology.png",
+          "alignment": "top",
+          "image_1": "shopify:\/\/shop_images\/animology_e6c84436-085d-4d80-aba7-038283a696ab.png",
           "title_1": "Award Winning Pet Care Products",
           "text_1": "<p>Animology is the multi-award winning pet care product brand that is trusted by pet owners, vets, retailers, groomers and championship show dog owners in more than 50 countries around the world to deliver the very highest standards of pet care.<br\/><\/p>",
           "button_label_1": "View our range",
           "button_link_1": "shopify:\/\/collections\/all",
-          "image_2": "shopify:\/\/shop_images\/animology-stockists.png",
+          "image_2": "shopify:\/\/shop_images\/animology-stockists_fad46635-2af4-4f2f-95f3-6972fde600e4.png",
           "title_2": "Find an Animology Stockist",
           "text_2": "<p>Use our store finder to find a stockist near you.<\/p><p><\/p>",
           "button_label_2": "Find a stockist",
