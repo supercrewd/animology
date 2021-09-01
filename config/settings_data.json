@@ -195,7 +195,7 @@
           "show_sold_out_circle": true,
           "sort_enable": true,
           "tags_enable": true,
-          "center_grid_link": false
+          "center_grid_link": true
         }
       },
       "collection-list": {
