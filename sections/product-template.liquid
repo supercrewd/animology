@@ -234,6 +234,11 @@
                 <li>
                   <a href="#extra1" data-link="extra1" class="tab-switch__trigger h3">Extra #1</a>
                 </li>
+                {% if product.metafields.teegee.product_ingredients %}
+                <li>
+                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
+                </li>
+                {% endif %}
               </ul>
               <div id="description" class="tab-switch__content" data-content="description">
                 <div class="product-description rte" itemprop="description">
@@ -254,16 +259,21 @@
                 <div class="rte">
                   Hello World
 
-                  {% assign ingredients = product.metafields.teegee %}
-                  {% assign key = 'product_ingredients' %}
-                  <p>{{ ingredients.product_ingredients }}.</p>
-
                   <hr />
 
                   {{ product.metafields.teegee.product_ingredients }}
 
                 </div>
               </div>
+              {% if product.metafields.teegee.product_ingredients %}
+              <div id="product_ingredients" class="tab-switch__content" data-content="product_ingredients">
+                <div class="rte">
+                  <hr />
+                  {{ product.metafields.teegee.product_ingredients }}
+                  <hr />
+                </div>
+              </div>
+              {% endif %}
             </div>
           {% else %}
             <div class="product-description rte" itemprop="description">
