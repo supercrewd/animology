@@ -119,7 +119,9 @@
                     <h2 class="slides__title slides__title--{{ section.settings.text_size }} h1">
                       {{ block.settings.slide_heading | escape }}
                     </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam neque at tortor aliquam, quis iaculis ante tempus. Nam vel lacus sed odio convallis imperdiet. Duis et magna fermentum, mattis metus eget, varius arcu. Proin dapibus non mi et mollis.</p>
+                    {% if section.settings.text_1 != blank %}
+                      {{ section.settings.text_1 }}
+                    {% endif %}
                   {%- endunless -%}
                   {%- if show_link_button -%}
                     <a href="{{ block.settings.button_link }}" class="slides__btn btn">
@@ -1206,6 +1208,56 @@
             "vi": "Tiêu đề",
             "zh-CN": "标题",
             "zh-TW": "標題"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "text_1",
+          "label": {
+            "cs": "Text",
+            "da": "Tekst",
+            "de": "Text",
+            "en": "Text",
+            "es": "Texto",
+            "fi": "Teksti",
+            "fr": "Texte",
+            "it": "Testo",
+            "ja": "テキスト",
+            "ko": "텍스트",
+            "nb": "Tekst",
+            "nl": "Tekst",
+            "pl": "Tekst",
+            "pt-BR": "Texto",
+            "pt-PT": "Texto",
+            "sv": "Text",
+            "th": "ข้อความ",
+            "tr": "Metin",
+            "vi": "Văn bản",
+            "zh-CN": "文本",
+            "zh-TW": "文字"
+          },
+          "default": {
+            "cs": "<p>Zkombinujte velký text a obrázek, abyste zaměřili pozornost návštěvníků na zvolený produkt, kolekci či příspěvek na blogu. Pak můžete připojit podrobnosti o dostupnosti či stylu, nebo dokonce recenzi.</p>",
+            "da": "<p>Kombiner stor tekst med et billede for at give dit valgte produkt, din valgte kollektion eller dit valgte blogopslag fokus. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "de": "<p>Kombiniere große Schrift mit einem Foto, um einen Fokus auf dein ausgewähltes Produkt, die Kategorie oder einen Blogpost zu legen. Du kannst dann Details zur Verfügbarkeit und dem Style oder sogar eine Bewertung hinzufügen.</p>",
+            "en": "",
+            "es": "<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o artículo de blog seleccionados. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.</p>",
+            "fi": "<p>Korosta valitsemaasi tuotetta, kokoelmaa tai blogijulkaisua lisäämällä kuvaan suuri teksti. Lisää saatavuustiedot, määritä tyyli tai näytä vaikkapa arvostelu.</p>",
+            "fr": "<p>Ajoutez une image à un long paragraphe de texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.</p>",
+            "it": "<p>Associa un testo di grandi dimensioni a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+            "ja": "<p>あなたが選んだ商品、コレクション、またはブログ記事に注目を集めるため、大きなテキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+            "ko": "<p>이미지와 큰 텍스트를 짝지어 선택한 제품, 컬렉션, 블로그 게시판을 강조합니다. 사용 가능성, 스타일에 대한 자세한 정보를 추가하거나 리뷰를 제공합니다.</p>",
+            "nb": "<p>Koble stor tekst med et bilde for å drive fokus mot det valgte produktet, samlingen eller blogginnlegget. Legg til detaljer om tilgjengelighet, stil eller vis frem en vurdering.</p>",
+            "nl": "<p>Plaats een afbeelding bij grote stukken tekst om de aandacht op je gekozen product, collectie of blogpost te richten. Voeg details over beschikbaarheid en stijl toe of plaats een productrecensie.</p>",
+            "pl": "<p>Połącz duży tekst z obrazem, aby skierować uwagę na wybrany produkt, kolekcję lub wpis na blogu. Dodaj szczegóły dotyczące dostępności, stylu lub nawet dołącz recenzję.</p>",
+            "pt-BR": "<p>Emparelhe textos grandes com uma imagem para dar foco ao produto, coleção ou postagem do blog. Adicione detalhes sobre disponibilidade, estilo ou até mesmo um comentário.</p>",
+            "pt-PT": "<p>Associe um texto grande a uma imagem para dar ênfase ao produto, coleção ou publicação no blogue que escolheu. Adicione detalhes sobre disponibilidade, estilo ou uma avaliação.</p>",
+            "sv": "<p>Para ihop stor text med en bild för att ge fokus åt din valda produkt, kollektion eller blogginlägg. Lägg till information om tillgänglighet, stil eller tillhandahåll till och med en recension.</p>",
+            "th": "<p>จับคู่ข้อความขนาดใหญ่กับรูปภาพเพื่อให้ความสำคัญกับสินค้า คอลเลกชัน หรือโพสต์บล็อกที่คุณเลือก เพิ่มรายละเอียดเกี่ยวกับความพร้อม สไตล์ หรือแม้กระทั่งเขียนรีวิว</p>",
+            "tr": "<p>Geniş metni bir görselle eşleyerek seçtiğiniz ürüne, koleksiyona veya blog gönderisine dikkat çekin. Stok durumu, stil hakkındaki ayrıntıları ekleyin, hatta inceleme sağlayın.</p>",
+            "vi": "<p>Ghép nối văn bản lớn với hình ảnh để làm nổi bật sản phẩm, bộ sưu tập hoặc bài viết blog đã chọn. Thêm chi tiết về tình trạng còn hàng, kiểu hoặc đưa ra đánh giá.</p>",
+            "zh-CN": "<p>将大文本与图片配对，以便将焦点置于您选择的产品、产品系列或博客文章。添加有关可用性和样式的详细信息，甚至是提供评论。</p>",
+            "zh-TW": "<p>大型文字搭配圖片，以便強調特定產品、商品系列或網誌貼文。您可以加上各種有關可用性、樣式的資料，甚至可以提供使用心得。</p>"
           }
         },
         {
