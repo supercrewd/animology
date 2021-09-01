@@ -225,44 +225,21 @@
                 <li>
                   <a href="#description" data-link="description" class="tab-switch__trigger h3">{{ 'products.product.description' | t }}</a>
                 </li>
+                {% if product.metafields.teegee.product_ingredients %}
+                <li>
+                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
+                </li>
+                {% endif %}
                 <li>
                   <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a>
                 </li>
                 <li>
                   <a href="#extra2" data-link="extra2" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content_2].title }}</a>
                 </li>
-                <li>
-                  <a href="#extra1" data-link="extra1" class="tab-switch__trigger h3">Extra #1</a>
-                </li>
-                {% if product.metafields.teegee.product_ingredients %}
-                <li>
-                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
-                </li>
-                {% endif %}
               </ul>
               <div id="description" class="tab-switch__content" data-content="description">
                 <div class="product-description rte" itemprop="description">
                   {{ product.description }}
-                </div>
-              </div>
-              <div id="extra" class="tab-switch__content" data-content="extra">
-                <div class="rte">
-                  {{ pages[section.settings.extra_tab_content].content }}
-                </div>
-              </div>
-              <div id="extra2" class="tab-switch__content" data-content="extra2">
-                <div class="rte">
-                  {{ pages[section.settings.extra_tab_content_2].content }}
-                </div>
-              </div>
-              <div id="extra1" class="tab-switch__content" data-content="extra1">
-                <div class="rte">
-                  Hello World
-
-                  <hr />
-
-                  {{ product.metafields.teegee.product_ingredients }}
-
                 </div>
               </div>
               {% if product.metafields.teegee.product_ingredients %}
@@ -274,6 +251,16 @@
                 </div>
               </div>
               {% endif %}
+              <div id="extra" class="tab-switch__content" data-content="extra">
+                <div class="rte">
+                  {{ pages[section.settings.extra_tab_content].content }}
+                </div>
+              </div>
+              <div id="extra2" class="tab-switch__content" data-content="extra2">
+                <div class="rte">
+                  {{ pages[section.settings.extra_tab_content_2].content }}
+                </div>
+              </div>
             </div>
           {% else %}
             <div class="product-description rte" itemprop="description">
