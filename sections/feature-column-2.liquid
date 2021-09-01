@@ -1,15 +1,6 @@
 <div class="page-width feature-row">
 
-  {% capture flex_alignment %}
-
-  {% if section.settings.alignment == 'top' %}
-    align-top
-  {% endif %}
-  {% if section.settings.alignment == 'center' %}
-    align-center
-  {% endif %}
-
-  {% endcapture %}
+  {% capture flex_alignment %}{% if section.settings.alignment == 'top' %}align-top{% endif %}{% if section.settings.alignment == 'center' %}align-center{% endif %}{% endcapture %}
 
 
   <div class="feature-row text-center {{ flex_alignment }}">
