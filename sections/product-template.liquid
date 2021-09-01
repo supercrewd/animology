@@ -253,6 +253,12 @@
               <div id="extra1" class="tab-switch__content" data-content="extra1">
                 <div class="rte">
                   Hello World
+
+                  {% assign ingredients = product.metafields.teegee %}
+                  {% assign key = 'product_ingredients' %}
+                  <p>Short Description: {{ ingredients.product_ingredients }}.</p>
+
+
                 </div>
               </div>
             </div>
