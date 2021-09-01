@@ -256,8 +256,11 @@
 
                   {% assign ingredients = product.metafields.teegee %}
                   {% assign key = 'product_ingredients' %}
-                  <p>Short Description: {{ ingredients.product_ingredients }}.</p>
+                  <p>{{ ingredients.product_ingredients }}.</p>
 
+                  <hr />
+
+                  {{ product.metafields.teegee.product_ingredients }}
 
                 </div>
               </div>
