@@ -292,6 +292,14 @@
           "button_label_2": "Find a stockist",
           "button_link_2": "shopify:\/\/collections"
         }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": "4"
+        }
       }
     },
     "content_for_index": [
