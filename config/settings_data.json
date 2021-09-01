@@ -268,10 +268,12 @@
       "163041026134736680": {
         "type": "feature-column-2",
         "settings": {
+          "image_1": "shopify:\/\/shop_images\/animology.png",
           "title_1": "Award Winning Pet Care Products",
           "text_1": "<p>Animology is the multi-award winning pet care product brand that is trusted by pet owners, vets, retailers, groomers and championship show dog owners in more than 50 countries around the world to deliver the very highest standards of pet care.<br\/><\/p>",
           "button_label_1": "View our range",
           "button_link_1": "shopify:\/\/collections\/all",
+          "image_2": "shopify:\/\/shop_images\/animology-stockists.png",
           "title_2": "Find an Animology Stockist",
           "text_2": "<p>Use our store finder to find a stockist near you.<\/p><p><\/p>",
           "button_label_2": "Find a stockist",
