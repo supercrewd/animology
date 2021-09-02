@@ -111,7 +111,7 @@
               "slide_heading": "Dogs Body Shampoo",
               "text_1": "<p>Browse our range of dog shampoo<\/p>",
               "button_label": "View Product",
-              "button_link": "shopify:\/\/collections\/dog-1"
+              "button_link": "shopify:\/\/products\/dogs-body"
             }
           },
           "slider-1": {
@@ -148,7 +148,7 @@
               "color_text": "#ffffff",
               "text_alignment": "center",
               "slide_heading": "Image slide",
-              "text_1": "<p><\/p>",
+              "text_1": "",
               "button_label": "",
               "button_link": ""
             }
