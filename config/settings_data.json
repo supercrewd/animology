@@ -11,7 +11,7 @@
     "color_header_text": "#000000",
     "color_body_text": "#000000",
     "color_footer_text": "#000000",
-    "color_footer_social_link": "#c10a0a",
+    "color_footer_social_link": "#59756f",
     "type_base_family": "helvetica_n4",
     "type_base_size": "16px",
     "type_header_family": "helvetica_n4",
@@ -28,8 +28,8 @@
     "share_pinterest": true,
     "social_sharing_style": "normal",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Animology_Logo_-_Strapline_-_Black_-_Transparent_Background_-_Large_92c1c401-c4d4-4e07-b768-3ca22cff4fe0.png",
-    "checkout_logo_position": "center",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
@@ -172,15 +172,12 @@
         "type": "product-template",
         "settings": {
           "product_vendor_enable": true,
-          "product_quantity_enable": true,
+          "product_quantity_enable": false,
           "product_image_zoom_type": "lightbox",
-          "product_thumbnails_position": "below",
-          "show_extra_tab": true,
-          "extra_tab_content": "delivery-information",
-          "extra_tab_content_2": "faqs",
-          "social_sharing": true,
-          "enable_payment_button": true,
-          "add_to_cart_width": "small"
+          "product_thumbnails_position": "right",
+          "show_extra_tab": false,
+          "extra_tab_content": "",
+          "social_sharing": false
         }
       },
       "article-template": {
@@ -302,16 +299,6 @@
           "display_type": "all",
           "sort": "alphabetical",
           "grid": "4"
-        }
-      },
-      "product-recommendations": {
-        "type": "product-recommendations",
-        "settings": {
-          "show_product_recommendations": true,
-          "heading": "You may also like",
-          "vendor_enable": false,
-          "show_sale_circle": false,
-          "center_grid_link": false
         }
       }
     },

@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 - Page non trouvée",
-      "subtext_html": "Cette page n'est pas disponible. <a href=\"{{ link }}\">Retourner vers la boutique</a>"
+      "subtext_html": "Cette page n'est pas disponible. <a href=\"{{ link }}\">Retourner vers la boutique<\/a>"
     },
     "password_page": {
       "login_form_heading": "Accéder à la boutique à l'aide d'un mot de passe:",
@@ -21,7 +21,7 @@
       "login_form_submit": "Entrer",
       "signup_form_email_label": "E-mails",
       "signup_form_success": "Nous vous enverrons un e-mail juste avant l'ouverture !!",
-      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"/admin\" class=\"text-link\">Connectez-vous ici</a>",
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>",
       "password_link": "Entrer avec un mot de passe",
       "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}",
       "close": "Fermer (Esc)"
@@ -88,14 +88,14 @@
       "subtotal": "Sous-total",
       "savings_html": "Vous économisez {{ price }}",
       "taxes_and_shipping_at_checkout": "Taxes et frais de port calculés à l'étape de paiement",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port</a> calculés à l'étape de paiement",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port<\/a> calculés à l'étape de paiement",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à l'étape de paiement",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port</a> calculés à l'étape de paiement.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port<\/a> calculés à l'étape de paiement.",
       "update": "Mettre à jour",
       "checkout": "Procéder au paiement",
       "empty": "Votre panier est vide.",
       "cookies_required": "Activer les cookies pour utiliser le panier",
-      "continue_browsing_html": "<a href=\"{{ link }}\">Retourner vers la boutique</a>.",
+      "continue_browsing_html": "<a href=\"{{ link }}\">Retourner vers la boutique<\/a>.",
       "continue_shopping": "Continuer vos achats"
     },
     "label": {
@@ -152,7 +152,7 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Ville",
-      "country": "Pays/région",
+      "country": "Pays\/région",
       "province": "Province",
       "zip": "Code postal",
       "phone": "Téléphone",
@@ -244,7 +244,7 @@
       "play": "Lire le diaporama",
       "load_slide": "Charger la diapositive {{ slide_number }}",
       "active_slide": "Faire glisser {{ slide_number }}, en cours",
-      "navigation_instructions": "Utilisez les flèches gauche/droite pour naviguer dans le diaporama ou glissez vers la gauche/droite sur un appareil mobile"
+      "navigation_instructions": "Utilisez les flèches gauche\/droite pour naviguer dans le diaporama ou glissez vers la gauche\/droite sur un appareil mobile"
     }
   },
   "layout": {
@@ -273,7 +273,7 @@
     "general": {
       "from_html": "À partir de {{ price }}",
       "include_taxes": "Taxes incluses.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frais de port</a> calculés à l'étape de paiement.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frais de port<\/a> calculés à l'étape de paiement.",
       "share_title": "Partager ce produit"
     },
     "product": {
@@ -299,7 +299,7 @@
     "errors": {
       "address_error": "Vous ne trouvez pas cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
-      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https://developers.google.com/maps/premium/usage-limits\">régime spécial</a>.",
+      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">régime spécial<\/a>.",
       "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps API."
     }
   },

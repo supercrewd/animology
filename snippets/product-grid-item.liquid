@@ -1,6 +1,54 @@
+
+{% comment %} Wholesale_Club_Featured_Prices Start {% endcomment %}
+{% assign base_product = featured %}
+{% assign base_variant = featured.selected_or_first_available_variant %}
+
+{% if shop.metafields.sawholesale['base_price'] == blank %}
+  {% assign base_price = 'compare_at_price' %}
+{% else %}
+  {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+{% endif %}
+
+{% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+{% if customer.tags != blank %}
+  {% for mf in base_product.metafields.sawholesale %}
+    {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+    {% if customer.tags contains product_customer_tag %}
+      {% assign saw_has_discount = true %}
+      {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+      {% assign price_key = product_customer_tag | prepend: 'price_' %}
+      {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign saw_discount = 1 | minus: saw_discount %}
+
+{% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+  {% assign saw_variant_compare_at_price = base_variant.price %}
+{% else %}
+  {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+{% endif %}
+
+{% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+{% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+  {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+{% else %}
+  {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+{% endif %}
+
+{% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+  {% assign WCFeatured_Price = featured.price %}
+  {% assign WCFeatured_ComparePrice = featured.compare_at_price %}
+{% else %}   
+  {% assign WCFeatured_Price = saw_variant_price %}
+  {% assign WCFeatured_ComparePrice = saw_variant_compare_at_price %}
+{% endif %}
+{% comment %} Wholesale_Club_Featured_Prices End {% endcomment %}
 {% assign on_sale = false %}
 {% assign sale_text = 'products.product.sale' | t %}
-{% if featured.compare_at_price > featured.price %}
+{% if WCFeatured_ComparePrice > WCFeatured_Price %}
   {% assign on_sale = true %}
 {% endif %}
 
@@ -68,11 +116,11 @@
     {% endif %}
     {% if featured.title != '' %}
       <p class="grid-link__meta">
-        {%- assign price = featured.price | money -%}
+        {%- assign price = WCFeatured_Price | money -%}
 
         {% if on_sale %}
         <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
-        <s class="grid-link__sale_price">{{ featured.compare_at_price | money }}</s>
+        <s class="grid-link__sale_price">{{ WCFeatured_ComparePrice | money }}</s>
         {% endif %}
         {% if featured.price_varies %}
           {{ 'products.general.from_html' | t: price: price }}

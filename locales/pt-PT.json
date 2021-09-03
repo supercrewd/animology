@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 Página Não Encontrada",
-      "subtext_html": "A página que solicitou não existe. Clique <a href=\"{{ link }}\">aqui</a> para continuar as suas compras."
+      "subtext_html": "A página que solicitou não existe. Clique <a href=\"{{ link }}\">aqui<\/a> para continuar as suas compras."
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",
@@ -21,7 +21,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "Email",
       "signup_form_success": "Enviaremos um e-mail antes de abrirmos!",
-      "admin_link_html": "É o proprietário da loja? <a href=\"/admin\" class=\"text-link\">Inicie sessão aqui</a>",
+      "admin_link_html": "É o proprietário da loja? <a href=\"\/admin\" class=\"text-link\">Inicie sessão aqui<\/a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "Esta loja irá contar com tecnologia {{ shopify }}",
       "close": "Encerrar (Esc)"
@@ -88,14 +88,14 @@
       "subtotal": "Subtotal",
       "savings_html": "Está a poupar {{ price }}",
       "taxes_and_shipping_at_checkout": "Impostos e envio calculados na finalização da compra",
-      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio</a> calculados na finalização da compra",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio<\/a> calculados na finalização da compra",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e envio calculado na finalização da compra",
-      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
+      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
       "update": "Atualizar carrinho",
       "checkout": "Finalizar a compra",
       "empty": "De momento, o seu carrinho está vazio.",
       "cookies_required": "Ative cookies para poder usar o carrinho de compras",
-      "continue_browsing_html": "Continue a ver <a href=\"{{ link }}\">aqui</a>.",
+      "continue_browsing_html": "Continue a ver <a href=\"{{ link }}\">aqui<\/a>.",
       "continue_shopping": "Continuar a Comprar"
     },
     "label": {
@@ -152,7 +152,7 @@
       "address1": "Endereço1",
       "address2": "Endereço2",
       "city": "Localidade",
-      "country": "País/região",
+      "country": "País\/região",
       "province": "Província",
       "zip": "Código Postal",
       "phone": "Telefone",
@@ -244,7 +244,7 @@
       "play": "Reproduzir apresentação de diapositivos",
       "load_slide": "Carregar slide {{ slide_number }}",
       "active_slide": "Diapositivo {{ slide_number }}, atual",
-      "navigation_instructions": "Utilize as setas esquerda/direita para navegar pela apresentação, ou deslize para a esquerda/direita se estiver a utilizar um dispositivo móvel"
+      "navigation_instructions": "Utilize as setas esquerda\/direita para navegar pela apresentação, ou deslize para a esquerda\/direita se estiver a utilizar um dispositivo móvel"
     }
   },
   "layout": {
@@ -273,7 +273,7 @@
     "general": {
       "from_html": "Desde {{ price }}",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
       "share_title": "Partilhar este Produto"
     },
     "product": {
@@ -299,7 +299,7 @@
     "errors": {
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
       "auth_error_html": "Houve um problema na autenticação da sua chave de API do Google Maps."
     }
   },

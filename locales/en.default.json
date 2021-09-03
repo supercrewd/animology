@@ -12,7 +12,7 @@
     },
     "404": {
       "title": "404 Page Not Found",
-      "subtext_html": "The page you requested does not exist. Click <a href=\"{{ link }}\">here</a> to continue shopping."
+      "subtext_html": "The page you requested does not exist. Click <a href=\"{{ link }}\">here<\/a> to continue shopping."
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",
@@ -21,7 +21,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}",
       "close": "Close (Esc)"
@@ -88,14 +88,14 @@
       "subtotal": "Subtotal",
       "savings_html": "You're saving {{ price }}",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "update": "Update Cart",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
       "cookies_required": "Enable cookies to use the shopping cart",
-      "continue_browsing_html": "Continue browsing <a href=\"{{ link }}\">here</a>.",
+      "continue_browsing_html": "Continue browsing <a href=\"{{ link }}\">here<\/a>.",
       "continue_shopping": "Continue shopping"
     },
     "label": {
@@ -152,9 +152,9 @@
       "address1": "Address1",
       "address2": "Address2",
       "city": "City",
-      "country": "Country/Region",
+      "country": "Country\/Region",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -244,7 +244,7 @@
       "play": "Play slideshow",
       "load_slide": "Load slide {{ slide_number }}",
       "active_slide": "Slide {{ slide_number }}, current",
-      "navigation_instructions": "Use left/right arrows to navigate the slideshow or swipe left/right if using a mobile device"
+      "navigation_instructions": "Use left\/right arrows to navigate the slideshow or swipe left\/right if using a mobile device"
     }
   },
   "layout": {
@@ -273,7 +273,7 @@
     "general": {
       "from_html": "From {{ price }}",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "share_title": "Share this Product"
     },
     "product": {
@@ -289,7 +289,7 @@
       "full_details": "Full details",
       "unit_price_label": "Unit price"
     },
-      "zoom": {
+    "zoom": {
       "next": "Next (Right arrow key)",
       "prev": "Previous (Left arrow key)",
       "close": "Close (Esc)"
@@ -299,7 +299,7 @@
     "errors": {
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
       "auth_error_html": "There was a problem authenticating your Google Maps API Key."
     }
   },

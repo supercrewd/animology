@@ -2583,19 +2583,14 @@ aside time em {
   border-bottom: 1px solid $colorBorder;
   margin: $gutter 0;
 
-  font-size: 0.6rem;
-
   li {
     display: inline-block;
     padding: $gutter / 2;
     margin-bottom: 0;
   }
 
-  li {
+  li:first-child {
     border-right: 1px solid $colorBorder;
-  }
-  li:last-child {
-    border-right: 0px solid $colorBorder;
   }
 }
 
@@ -2675,7 +2670,7 @@ aside time em {
       color: $colorPrimary;
     }
   }
-
+  
   ul {
     display: none;
     position: absolute;
