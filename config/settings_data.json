@@ -202,6 +202,12 @@
       "collection-list": {
         "type": "collection-list",
         "blocks": {
+          "53b0b15f-0601-47df-b95d-b17546ed114b": {
+            "type": "collection",
+            "settings": {
+              "collection": "cat"
+            }
+          },
           "6702cb0f-3bd6-4e96-80d2-ae818c780abf": {
             "type": "collection",
             "settings": {
@@ -222,6 +228,7 @@
           }
         },
         "block_order": [
+          "53b0b15f-0601-47df-b95d-b17546ed114b",
           "6702cb0f-3bd6-4e96-80d2-ae818c780abf",
           "5c8baefc-de37-47cb-978a-9b17fae18628",
           "501d92b0-4bce-4546-9e66-6cd33b02bc19"
