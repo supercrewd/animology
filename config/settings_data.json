@@ -208,6 +208,12 @@
               "collection": "cat"
             }
           },
+          "f34c7923-df57-4edf-861e-7bad0dfcd0c1": {
+            "type": "collection",
+            "settings": {
+              "collection": "dog"
+            }
+          },
           "6702cb0f-3bd6-4e96-80d2-ae818c780abf": {
             "type": "collection",
             "settings": {
@@ -229,6 +235,7 @@
         },
         "block_order": [
           "53b0b15f-0601-47df-b95d-b17546ed114b",
+          "f34c7923-df57-4edf-861e-7bad0dfcd0c1",
           "6702cb0f-3bd6-4e96-80d2-ae818c780abf",
           "5c8baefc-de37-47cb-978a-9b17fae18628",
           "501d92b0-4bce-4546-9e66-6cd33b02bc19"
