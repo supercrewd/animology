@@ -271,7 +271,7 @@ $colorTopBarText: #ffffff;
 $colorBody: #ffffff;
 $colorHeader: transparent;
 $colorTopBar: #212121;
-$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/password-page-background.jpg?v=12987344696580752000';
+$passwordBgImage: '//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/password-page-background.jpg?v=12987344696580752000';
 
 // Border colors
 $colorBorder: #ebebeb;
@@ -1485,7 +1485,7 @@ select {
           appearance: none;
   background-position: right center;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/ico-select.svg?611');
+    image: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/ico-select.svg?v=2311470713116691728');
     repeat: no-repeat;
     position: right 10px center;
     color: #fff;
@@ -1671,11 +1671,11 @@ label.error {
 /*================ Partials | Icons ================*/
 @font-face {
   font-family: "icons";
-  src: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/icons.eot?v=7195627261625819681');
-  src: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/icons.eot?v=7195627261625819681#iefix') format("embedded-opentype"),
-    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/icons.woff?v=14301888385457014102') format("woff"),
-    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/icons.ttf?v=7232069697402409884') format("truetype"),
-    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/11/assets/icons.svg?v=5513040475363733965#timber-icons') format("svg");
+  src: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/icons.eot?v=7195627261625819681');
+  src: url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/icons.eot?v=7195627261625819681#iefix') format("embedded-opentype"),
+    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/icons.woff?v=14301888385457014102') format("woff"),
+    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/icons.ttf?v=7232069697402409884') format("truetype"),
+    url('//cdn.shopify.com/s/files/1/0591/0318/3023/t/10/assets/icons.svg?v=5513040475363733965#timber-icons') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2618,19 +2618,14 @@ aside time em {
   border-bottom: 1px solid $colorBorder;
   margin: $gutter 0;
 
-  font-size: 0.6rem;
-
   li {
     display: inline-block;
     padding: $gutter / 2;
     margin-bottom: 0;
   }
 
-  li {
+  li:first-child {
     border-right: 1px solid $colorBorder;
-  }
-  li:last-child {
-    border-right: 0px solid $colorBorder;
   }
 }
 
@@ -2710,7 +2705,7 @@ aside time em {
       color: $colorPrimary;
     }
   }
-
+  
   ul {
     display: none;
     position: absolute;
