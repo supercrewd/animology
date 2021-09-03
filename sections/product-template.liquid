@@ -47,7 +47,7 @@
   {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
   {% assign WCProduct_VariantPrice = base_variant.price %}
   {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
-{% else %}   
+{% else %}
   {% assign WCProduct_Price = saw_variant_price %}
   {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
   {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
@@ -267,6 +267,7 @@
 {% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
 
 {% if customer.tags != blank %}
+  Tag: {% customer.tags %}
   {% for mf in base_product.metafields.sawholesale %}
     {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
     {% if customer.tags contains product_customer_tag %}
@@ -302,7 +303,7 @@
   {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
   {% assign WCProduct_VariantPrice = base_variant.price %}
   {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
-{% else %}   
+{% else %}
   {% assign WCProduct_Price = saw_variant_price %}
   {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
   {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
