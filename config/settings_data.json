@@ -172,13 +172,15 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "product_vendor_enable": true,
+          "product_vendor_enable": false,
           "product_quantity_enable": false,
           "product_image_zoom_type": "lightbox",
-          "product_thumbnails_position": "right",
+          "product_thumbnails_position": "below",
           "show_extra_tab": false,
           "extra_tab_content": "",
-          "social_sharing": false
+          "social_sharing": false,
+          "enable_payment_button": true,
+          "add_to_cart_width": "small"
         }
       },
       "article-template": {
@@ -300,6 +302,16 @@
           "display_type": "all",
           "sort": "alphabetical",
           "grid": "4"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "vendor_enable": false,
+          "show_sale_circle": false,
+          "center_grid_link": false
         }
       }
     },
