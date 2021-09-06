@@ -118,14 +118,15 @@
           "slider-1": {
             "type": "image",
             "settings": {
-              "alignment": "center center",
+              "image": "shopify:\/\/shop_images\/Facebook-February-2018.jpg",
+              "alignment": "center top",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "Image slide",
-              "text_1": "<p>test<\/p>",
-              "button_label": "",
-              "button_link": ""
+              "text_alignment": "left",
+              "slide_heading": "Puppy Love Shampoo",
+              "text_1": "<p>A mild shampoo suitable for puppies from 6 weeks old & infused with our 'Puppy' scent.<\/p>",
+              "button_label": "View Product",
+              "button_link": "shopify:\/\/products\/puppy-love"
             }
           },
           "slider-2": {
