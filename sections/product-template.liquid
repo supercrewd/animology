@@ -266,8 +266,9 @@
 
 {% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
 
+Tag: {{ customer.tags }}
+
 {% if customer.tags != blank %}
-  Tag: {{ customer.tags }}
   {% for mf in base_product.metafields.sawholesale %}
     {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
     {% if customer.tags contains product_customer_tag %}
