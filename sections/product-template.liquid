@@ -211,6 +211,8 @@
         {% endif %}
         <h1 class="product-single__title" itemprop="name">{{ product.title }}</h1>
 
+        <p>Tag: {{ customer.tags }}</p>
+
         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           {% assign variant = product.selected_or_first_available_variant %}
 
@@ -265,8 +267,6 @@
 {% endif %}
 
 {% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
-
-Tag: {{ customer.tags }}
 
 {% if customer.tags != blank %}
   {% for mf in base_product.metafields.sawholesale %}
