@@ -337,7 +337,10 @@
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
 
-            {% if customer.tags != 'wholesale' %}
+            {% if customer.tags == 'wholesale' %}
+              <p>Hide buy it now button : {{ customer.tags }}</p>
+            {% else %}
+
               {% if section.settings.enable_payment_button %}
                 {{ form | payment_button }}
               {% endif %}
