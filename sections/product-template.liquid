@@ -342,7 +342,8 @@
               <p>Hide buy it now button : {{ customer.tags }}</p>
             {% else %}
 
-              {% if section.settings.enable_payment_button %}
+              <p>Tag is : {{ customer.tags }}</p>
+              {% if section.settings.enable_payment_button and customer.tags != 'wholesale' %}
                 {{ form | payment_button }}
               {% endif %}
             {% endif %}
