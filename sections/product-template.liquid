@@ -338,7 +338,7 @@
             </button>
 
             [TEST]
-            {% if customer.tags == 'wholesale' %}
+            {% if customer.tags contains 'wholesale' %}
               <p>Hide buy it now button : {{ customer.tags }}</p>
             {% else %}
 
