@@ -841,7 +841,10 @@ theme.Product = (function() {
       console.log("Start debugging tabs");
       console.log("showExtraTabs = " + this.showExtraTab);
       console.log("extraTabContent = " + this.extraTabContent);
+      /*
       if (!this.showExtraTab || this.extraTabContent) {
+      */
+      if (this.showExtraTab == 'true' || this.extraTabContent) {
         console.log("init tabs");
         this.initProductTabs();
       }
