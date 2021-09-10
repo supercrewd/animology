@@ -393,17 +393,17 @@
                 </div>
               </div>
               {% endif %}
-              {% if pages[section.settings.extra_tab_content].title %}
+              {% if pages[section.settings.extra_tab_content].content %}
               <div id="extra" class="tab-switch__content" data-content="extra">
                 <div class="rte">
-                  {{ pages[section.settings.extra_tab_content].content }}
+                  {{ pages[section.settings.extra_tab_content].content }} #1
                 </div>
               </div>
               {% endif %}
               {% if pages[section.settings.extra_tab_content_2].title %}
               <div id="extra2" class="tab-switch__content" data-content="extra2">
                 <div class="rte">
-                  {{ pages[section.settings.extra_tab_content_2].content }}
+                  {{ pages[section.settings.extra_tab_content_2].content }} #2
                 </div>
               </div>
               {% endif %}
