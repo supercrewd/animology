@@ -337,6 +337,7 @@
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
 
+            [TEST]
             {% if customer.tags == 'wholesale' %}
               <p>Hide buy it now button : {{ customer.tags }}</p>
             {% else %}
@@ -346,29 +347,68 @@
               {% endif %}
             {% endif %}
 
-
           {% endform %}
 
-          {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
+          {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty or pages[section.settings.extra_tab_content_2] == empty %}
             <div class="tabs">
               <ul class="tab-switch__nav">
                 <li>
                   <a href="#description" data-link="description" class="tab-switch__trigger h3">{{ 'products.product.description' | t }}</a>
                 </li>
+                {% if product.metafields.teegee.product_ingredients %}
+                <li>
+                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
+                </li>
+                {% endif %}
+                {% if product.metafields.teegee.product_benefits %}
+                <li>
+                  <a href="#product_benefits" data-link="product_benefits" class="tab-switch__trigger h3">Benefits</a>
+                </li>
+                {% endif %}
+                {% if pages[section.settings.extra_tab_content].title %}
                 <li>
                   <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a>
                 </li>
+                {% endif %}
+                {% if pages[section.settings.extra_tab_content_2].title %}
+                <li>
+                  <a href="#extra2" data-link="extra2" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content_2].title }}</a>
+                </li>
+                {% endif %}
               </ul>
               <div id="description" class="tab-switch__content" data-content="description">
                 <div class="product-description rte" itemprop="description">
                   {{ product.description }}
                 </div>
               </div>
+              {% if product.metafields.teegee.product_ingredients %}
+              <div id="product_ingredients" class="tab-switch__content" data-content="product_ingredients">
+                <div class="rte">
+                  {{ product.metafields.teegee.product_ingredients }}
+                </div>
+              </div>
+              {% endif %}
+              {% if product.metafields.teegee.product_benefits %}
+              <div id="product_benefits" class="tab-switch__content" data-content="product_benefits">
+                <div class="rte">
+                  {{ product.metafields.teegee.product_benefits }}
+                </div>
+              </div>
+              {% endif %}
+              {% if pages[section.settings.extra_tab_content].title %}
               <div id="extra" class="tab-switch__content" data-content="extra">
                 <div class="rte">
                   {{ pages[section.settings.extra_tab_content].content }}
                 </div>
               </div>
+              {% endif %}
+              {% if pages[section.settings.extra_tab_content_2].title %}
+              <div id="extra2" class="tab-switch__content" data-content="extra2">
+                <div class="rte">
+                  {{ pages[section.settings.extra_tab_content_2].content }}
+                </div>
+              </div>
+              {% endif %}
             </div>
           {% else %}
             <div class="product-description rte" itemprop="description">
