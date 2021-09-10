@@ -363,7 +363,7 @@
                   <a href="#product_benefits" data-link="product_benefits" class="tab-switch__trigger h5">Benefits</a>
                 </li>
                 {% endif %}
-                {% if section.settings.extra_tab_content and pages[section.settings.extra_tab_content].title %}
+                {% if section.settings.extra_tab_content and pages[section.settings.extra_tab_content].title != "" %}
                 <li>
                   <a href="#extra" data-link="extra" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content].title }} #1</a>
                 </li>
