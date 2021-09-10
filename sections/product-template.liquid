@@ -365,12 +365,12 @@
                 {% endif %}
                 {% if section.settings.extra_tab_content and pages[section.settings.extra_tab_content].title != "" %}
                 <li>
-                  <a href="#extra" data-link="extra" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content].title }} #1</a>
+                  <a href="#extra" data-link="extra" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content].title }}</a>
                 </li>
                 {% endif %}
-                {% if section.settings.extra_tab_content_2 and pages[section.settings.extra_tab_content_2].title %}
+                {% if section.settings.extra_tab_content_2 and pages[section.settings.extra_tab_content_2].title != "" %}
                 <li>
-                  <a href="#extra2" data-link="extra2" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content_2].title }} #2</a>
+                  <a href="#extra2" data-link="extra2" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content_2].title }}</a>
                 </li>
                 {% endif %}
               </ul>
@@ -393,14 +393,14 @@
                 </div>
               </div>
               {% endif %}
-              {% if pages[section.settings.extra_tab_content].content %}
+              {% if pages[section.settings.extra_tab_content].title != "" %}
               <div id="extra" class="tab-switch__content" data-content="extra">
                 <div class="rte">
                   {{ pages[section.settings.extra_tab_content].content }} #1
                 </div>
               </div>
               {% endif %}
-              {% if pages[section.settings.extra_tab_content_2].title %}
+              {% if pages[section.settings.extra_tab_content_2].title != "" %}
               <div id="extra2" class="tab-switch__content" data-content="extra2">
                 <div class="rte">
                   {{ pages[section.settings.extra_tab_content_2].content }} #2
