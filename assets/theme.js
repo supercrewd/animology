@@ -838,9 +838,14 @@ theme.Product = (function() {
         this.productImageZoom();
       }
 
+      console.log("Start debugging tabs");
+      console.log("showExtraTabs = " + this.showExtraTab);
+      console.log("extraTabContent = " + this.extraTabContent);
       if (!this.showExtraTab || this.extraTabContent) {
+        console.log("init tabs");
         this.initProductTabs();
       }
+      console.log("end tabs");
     },
 
     initBreakpoints: function() {
