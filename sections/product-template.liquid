@@ -344,6 +344,7 @@
 
               <p>Tag is : {{ customer.tags }}</p>
               {% if section.settings.enable_payment_button and customer.tags != 'wholesale' %}
+              <p>loading button</p>
                 {{ form | payment_button }}
               {% endif %}
             {% endif %}
