@@ -28,7 +28,7 @@
       "enableRecaptcha": false,
       "whitelistedTags": "",
       "recaptchaSiteKey": "",
-      "markRequiredFields": false,
+      "markRequiredFields": true,
       "displayCancelButton": true,
       "redirectAfterSubmit": false,
       "goBackAfterSubmission": false,
@@ -43,8 +43,10 @@
       "page_template"
     ],
     "created_at": "2021-09-10T10:06:48Z",
-    "updated_at": "2021-09-10T10:31:03Z",
+    "updated_at": "2021-09-10T10:40:28Z",
     "revision_ids": [
+      "Z6Trnag",
+      "K0TgERA",
       "yzTgpOK",
       "vbT0edV",
       "VNT3n3x",
@@ -55,9 +57,9 @@
     ]
   },
   "revision": {
-    "id": "yzTgpOK",
-    "created_at": "2021-09-10T10:40:16Z",
-    "updated_at": "2021-09-10T10:40:16Z",
+    "id": "Z6Trnag",
+    "created_at": "2021-09-10T10:41:37Z",
+    "updated_at": "2021-09-10T10:41:37Z",
     "embed_version": "4.6.0",
     "published_at": null,
     "fields": [
@@ -233,6 +235,43 @@
         "autotag": null
       },
       {
+        "id": 494462,
+        "dataColumn": {
+          "key": "i_agree_not_to_sell_the_an",
+          "label": "I agree not to sell the Animology line of products on Amazon.",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 10,
+        "type": "checkbox",
+        "stepId": 228625,
+        "default": "",
+        "label": "I agree not to sell the Animology line of products on Amazon.",
+        "placeholder": null,
+        "description": "We are no longer allowing any Animology products to be sold on any Amazon sites. Please check the box to acknowledge this notice.",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "You must accept that you will not sell Animology products on Amazon",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
         "id": 137131,
         "dataColumn": {
           "key": "wholesale_terms_agreement",
@@ -240,7 +279,7 @@
           "dataType": "boolean"
         },
         "parentId": null,
-        "position": 10,
+        "position": 11,
         "type": "checkbox",
         "stepId": 228625,
         "default": "",
@@ -530,20 +569,20 @@
         "autotag": null
       },
       {
-        "id": 494462,
+        "id": 342539,
         "dataColumn": {
-          "key": "i_agree_not_to_sell_the_an",
-          "label": "I agree not to sell the Animology line of products on Amazon.",
-          "dataType": "boolean"
+          "key": "website__social_media_url",
+          "label": "Website \/ Social Media URL",
+          "dataType": "text"
         },
         "parentId": null,
         "position": 9,
-        "type": "checkbox",
+        "type": "text",
         "stepId": 228625,
         "default": "",
-        "label": "I agree not to sell the Animology line of products on Amazon.",
+        "label": "Website \/ Social Media URL",
         "placeholder": null,
-        "description": "We are no longer allowing any Animology products to be sold on any Amazon sites. Please check the box to acknowledge this notice.",
+        "description": "",
         "enum": [
 
         ],
@@ -553,14 +592,7 @@
         "settings": {
         },
         "validations": [
-          {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "You must accept that you will not sell Animology products on Amazon",
-            "metadata": {
-              "hiddenInApp": true
-            }
-          }
+
         ],
         "sensitive": null,
         "preset": null,
@@ -833,6 +865,12 @@
             "effect": "hide_field",
             "metadata": {
               "fieldId": 137131
+            }
+          },
+          {
+            "effect": "hide_field",
+            "metadata": {
+              "fieldId": 342539
             }
           }
         ]
