@@ -177,7 +177,7 @@
           "product_quantity_enable": true,
           "product_image_zoom_type": "lightbox",
           "product_thumbnails_position": "below",
-          "show_extra_tab": false,
+          "show_extra_tab": true,
           "extra_tab_content": "",
           "social_sharing": false,
           "enable_payment_button": true,
