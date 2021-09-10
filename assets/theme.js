@@ -844,7 +844,7 @@ theme.Product = (function() {
       /*
       if (!this.showExtraTab || this.extraTabContent) {
       */
-      if (this.showExtraTab == 'true' || this.extraTabContent) {
+      if (this.showExtraTab == true || this.extraTabContent) {
         console.log("init tabs");
         this.initProductTabs();
       }
