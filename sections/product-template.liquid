@@ -347,7 +347,7 @@
 
           {% endform %}
 
-          {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty or pages[section.settings.extra_tab_content_2] == empty %}
+          {% unless section.settings.show_extra_tab == false  %}
             <div class="tabs">
               <ul class="tab-switch__nav">
                 <li>
@@ -853,7 +853,7 @@
         "zh-CN": "此页内容将显示在额外标签中。",
         "zh-TW": "此頁面內容將出現在額外索引標籤。"
       }
-    },    
+    },
     {
       "type": "checkbox",
       "id": "social_sharing",
