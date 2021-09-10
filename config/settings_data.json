@@ -178,7 +178,7 @@
           "product_image_zoom_type": "lightbox",
           "product_thumbnails_position": "below",
           "show_extra_tab": true,
-          "extra_tab_content": "",
+          "extra_tab_content": "delivery-information",
           "social_sharing": false,
           "enable_payment_button": true,
           "add_to_cart_width": "small"
