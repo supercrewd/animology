@@ -3,7 +3,7 @@
     "id": "a0tDW0",
     "name": "Trade Registration",
     "handle": "trade-registration-17",
-    "theme_id": null,
+    "theme_id": "126579703983",
     "settings": {
       "locales": {
         "back": "Back",
@@ -40,11 +40,12 @@
       "goBackAfterCancelButtonClick": false
     },
     "install_locations": [
-
+      "page_template"
     ],
     "created_at": "2021-09-10T10:06:48Z",
-    "updated_at": "2021-09-10T10:06:48Z",
+    "updated_at": "2021-09-10T10:31:03Z",
     "revision_ids": [
+      "wDTKl5P",
       "akTzqzn",
       "ErTA0An",
       "9pTn8nm",
@@ -52,9 +53,9 @@
     ]
   },
   "revision": {
-    "id": "akTzqzn",
-    "created_at": "2021-09-10T10:30:34Z",
-    "updated_at": "2021-09-10T10:30:34Z",
+    "id": "wDTKl5P",
+    "created_at": "2021-09-10T10:37:59Z",
+    "updated_at": "2021-09-10T10:37:59Z",
     "embed_version": "4.6.0",
     "published_at": null,
     "fields": [
@@ -152,41 +153,10 @@
         "autotag": null
       },
       {
-        "id": 900615,
-        "dataColumn": null,
-        "parentId": null,
-        "position": 0,
-        "type": "heading",
-        "stepId": 228625,
-        "default": "",
-        "label": "Trade account heading",
-        "placeholder": null,
-        "description": "",
-        "enum": [
-
-        ],
-        "appearance": {
-          "width": 12,
-          "alignment": "left"
-        },
-        "settings": {
-          "size": 1,
-          "content": "Trade Account",
-          "hideLabel": true,
-          "fontWeight": "bold"
-        },
-        "validations": [
-
-        ],
-        "sensitive": null,
-        "preset": null,
-        "autotag": null
-      },
-      {
         "id": 188382,
         "dataColumn": null,
         "parentId": null,
-        "position": 1,
+        "position": 0,
         "type": "paragraph",
         "stepId": 228625,
         "default": "",
@@ -212,40 +182,51 @@
         "autotag": null
       },
       {
-        "id": 494462,
+        "id": 143607,
         "dataColumn": {
-          "key": "i_agree_not_to_sell_the_an",
-          "label": "I agree not to sell the Animology line of products on Amazon.",
-          "dataType": "boolean"
+          "key": "default_address.country",
+          "label": "Country",
+          "dataType": "text"
         },
         "parentId": null,
-        "position": 10,
-        "type": "checkbox",
+        "position": 1,
+        "type": "dropdown",
         "stepId": 228625,
-        "default": "",
-        "label": "I agree not to sell the Animology line of products on Amazon.",
-        "placeholder": null,
-        "description": "We are no longer allowing any Animology products to be sold on any Amazon sites. Please check the box to acknowledge this notice.",
+        "default": "United Kingdom",
+        "label": "Your business is located within",
+        "placeholder": "Select a country...",
+        "description": "",
         "enum": [
-
+          {
+            "value": "",
+            "label": ""
+          }
         ],
         "appearance": {
           "width": 12
         },
         "settings": {
+          "isCountryField": true
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "You must accept that you will not sell Animology products on Amazon"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          },
+          {
+            "operator": "equals",
+            "comparand": "United Kingdom",
+            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
+            "metadata": {
+            }
           }
         ],
         "sensitive": null,
-        "preset": null,
+        "preset": "country",
         "autotag": null
       },
       {
@@ -256,7 +237,7 @@
           "dataType": "boolean"
         },
         "parentId": null,
-        "position": 11,
+        "position": 10,
         "type": "checkbox",
         "stepId": 228625,
         "default": "",
@@ -273,64 +254,16 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "You must accept Wholesale Terms"
+            "errorMessage": "You must accept Wholesale Terms",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
         "preset": null,
-        "autotag": null
-      },
-      {
-        "id": 143607,
-        "dataColumn": {
-          "key": "default_address.country",
-          "label": "Country",
-          "dataType": "text"
-        },
-        "parentId": null,
-        "position": 2,
-        "type": "dropdown",
-        "stepId": 228625,
-        "default": "United Kingdom",
-        "label": "Your business is located within",
-        "placeholder": "Select a country...",
-        "description": "",
-        "enum": [
-          {
-            "label": "",
-            "value": ""
-          }
-        ],
-        "appearance": {
-          "width": 12
-        },
-        "settings": {
-          "isCountryField": true
-        },
-        "validations": [
-          {
-            "metadata": {
-              "hiddenInApp": true
-            },
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank"
-          },
-          {
-            "metadata": {
-            },
-            "operator": "equals",
-            "comparand": "United Kingdom",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor."
-          }
-        ],
-        "sensitive": null,
-        "preset": "country",
         "autotag": null
       },
       {
@@ -341,7 +274,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 3,
+        "position": 2,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -358,12 +291,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -378,7 +311,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 4,
+        "position": 3,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -395,12 +328,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -415,7 +348,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 5,
+        "position": 4,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -445,7 +378,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 6,
+        "position": 5,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -462,12 +395,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -482,7 +415,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 7,
+        "position": 6,
         "type": "dropdown",
         "stepId": 228625,
         "default": "",
@@ -501,12 +434,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -521,7 +454,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 8,
+        "position": 7,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -538,12 +471,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -558,7 +491,7 @@
           "dataType": "phone"
         },
         "parentId": null,
-        "position": 9,
+        "position": 8,
         "type": "phone",
         "stepId": 228625,
         "default": "",
@@ -581,16 +514,53 @@
             "errorMessage": "Please provide a valid phone number"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
         "preset": "phone_number",
+        "autotag": null
+      },
+      {
+        "id": 494462,
+        "dataColumn": {
+          "key": "i_agree_not_to_sell_the_an",
+          "label": "I agree not to sell the Animology line of products on Amazon.",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 9,
+        "type": "checkbox",
+        "stepId": 228625,
+        "default": "",
+        "label": "I agree not to sell the Animology line of products on Amazon.",
+        "placeholder": null,
+        "description": "We are no longer allowing any Animology products to be sold on any Amazon sites. Please check the box to acknowledge this notice.",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "You must accept that you will not sell Animology products on Amazon",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
         "autotag": null
       },
       {
@@ -616,12 +586,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -651,12 +621,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -691,12 +661,12 @@
             "errorMessage": "Please provide a valid email address"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -748,16 +718,20 @@
       {
         "id": 105018,
         "title": "Submission success",
+        "description": "",
         "metadata": {
           "isSuccessStep": true
-        },
-        "description": ""
+        }
       }
     ],
     "rules": [
       {
         "id": 271398,
         "title": "Show \"Wholesale\" step and tag customer",
+        "conditionChaining": "all",
+        "conditions": [
+
+        ],
         "actions": [
           {
             "effect": "tag_customer",
@@ -765,15 +739,25 @@
               "value": "wholesale"
             }
           }
-        ],
-        "conditions": [
-
-        ],
-        "conditionChaining": "all"
+        ]
       },
       {
         "id": 195628,
         "title": "Show tax exempt upload field",
+        "conditionChaining": "all",
+        "conditions": [
+          {
+            "operand": null,
+            "operator": "is_true",
+            "metadata": {
+              "column": {
+                "key": "tax_exempt",
+                "label": "Tax exempt",
+                "dataType": "boolean"
+              }
+            }
+          }
+        ],
         "actions": [
           {
             "effect": "show_field",
@@ -781,21 +765,52 @@
               "fieldId": 134858
             }
           }
-        ],
+        ]
+      },
+      {
+        "id": 174393,
+        "title": "Hide field",
+        "conditionChaining": "all",
         "conditions": [
           {
             "operand": null,
+            "operator": "not_equals",
             "metadata": {
+              "comparand": "United Kingdom",
               "column": {
-                "key": "tax_exempt",
-                "label": "Tax exempt",
-                "dataType": "boolean"
+                "id": null,
+                "key": "default_address.country",
+                "label": "Country",
+                "dataType": "text",
+                "readOnly": false,
+                "dedicated": true,
+                "createdAt": null,
+                "archivedAt": null,
+                "expandedLabel": "Country",
+                "favorite": false
               }
-            },
-            "operator": "is_true"
+            }
           }
         ],
-        "conditionChaining": "all"
+        "actions": [
+          {
+            "effect": "hide_step",
+            "metadata": {
+              "stepId": 529971
+            }
+          },
+          {
+            "effect": "disable_form_submission",
+            "metadata": {
+            }
+          },
+          {
+            "effect": "disable_field",
+            "metadata": {
+              "fieldId": 105435
+            }
+          }
+        ]
       }
     ]
   }
