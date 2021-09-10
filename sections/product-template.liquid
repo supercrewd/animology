@@ -351,26 +351,26 @@
             <div class="tabs">
               <ul class="tab-switch__nav">
                 <li>
-                  <a href="#description" data-link="description" class="tab-switch__trigger h3">{{ 'products.product.description' | t }}</a>
+                  <a href="#description" data-link="description" class="tab-switch__trigger h5">{{ 'products.product.description' | t }}</a>
                 </li>
                 {% if product.metafields.teegee.product_ingredients %}
                 <li>
-                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h3">Ingredients</a>
+                  <a href="#product_ingredients" data-link="product_ingredients" class="tab-switch__trigger h5">Ingredients</a>
                 </li>
                 {% endif %}
                 {% if product.metafields.teegee.product_benefits %}
                 <li>
-                  <a href="#product_benefits" data-link="product_benefits" class="tab-switch__trigger h3">Benefits</a>
+                  <a href="#product_benefits" data-link="product_benefits" class="tab-switch__trigger h5">Benefits</a>
                 </li>
                 {% endif %}
                 {% if pages[section.settings.extra_tab_content].title %}
                 <li>
-                  <a href="#extra" data-link="extra" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content].title }}</a>
+                  <a href="#extra" data-link="extra" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content].title }}</a>
                 </li>
                 {% endif %}
                 {% if pages[section.settings.extra_tab_content_2].title %}
                 <li>
-                  <a href="#extra2" data-link="extra2" class="tab-switch__trigger h3">{{ pages[section.settings.extra_tab_content_2].title }}</a>
+                  <a href="#extra2" data-link="extra2" class="tab-switch__trigger h5">{{ pages[section.settings.extra_tab_content_2].title }}</a>
                 </li>
                 {% endif %}
               </ul>
