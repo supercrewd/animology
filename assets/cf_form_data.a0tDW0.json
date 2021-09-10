@@ -1,0 +1,802 @@
+{
+  "form": {
+    "id": "a0tDW0",
+    "name": "Trade Registration",
+    "handle": "trade-registration-17",
+    "theme_id": null,
+    "settings": {
+      "locales": {
+        "back": "Back",
+        "next": "Next",
+        "cancel": "Cancel",
+        "edit_link": "Edit account",
+        "fix_errors": "Please fix errors before continuing",
+        "is_invalid": "{{label}} is invalid",
+        "email_taken": "Email has already been taken",
+        "phone_taken": "Phone number has already been taken",
+        "server_error": "Could not save form, please try again later",
+        "step_counter": "Step {{current}} of {{total}}",
+        "verify_email": "Check your email for a verification link to activate your account.",
+        "not_available": "An error occurred while saving your account, please try again in a few minutes.",
+        "create_account": "Submit",
+        "update_account": "Submit",
+        "recaptcha_error": "Challenge verification failed, please try again",
+        "creating_account": "Saving...",
+        "updating_account": "Saving...",
+        "invalid_email_domain": "Email contains an invalid domain name"
+      },
+      "enableRecaptcha": false,
+      "whitelistedTags": "",
+      "recaptchaSiteKey": "",
+      "markRequiredFields": false,
+      "displayCancelButton": true,
+      "redirectAfterSubmit": false,
+      "goBackAfterSubmission": false,
+      "accountApprovalRequired": true,
+      "cancelButtonRedirectUrl": "\/account\/login",
+      "emailVerificationRequired": false,
+      "postSubmissionRedirectUrl": "\/account",
+      "showSuccessStepAfterSubmit": true,
+      "goBackAfterCancelButtonClick": false
+    },
+    "install_locations": [
+
+    ],
+    "created_at": "2021-09-10T10:06:48Z",
+    "updated_at": "2021-09-10T10:06:48Z",
+    "revision_ids": [
+      "akTzqzn",
+      "ErTA0An",
+      "9pTn8nm",
+      "VNT3n3x"
+    ]
+  },
+  "revision": {
+    "id": "akTzqzn",
+    "created_at": "2021-09-10T10:30:34Z",
+    "updated_at": "2021-09-10T10:30:34Z",
+    "embed_version": "4.6.0",
+    "published_at": null,
+    "fields": [
+      {
+        "id": 306458,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 0,
+        "type": "heading",
+        "stepId": 105018,
+        "default": "",
+        "label": "Account request sent heading",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12,
+          "alignment": "center"
+        },
+        "settings": {
+          "size": 1,
+          "content": "Application submitted",
+          "hideLabel": true,
+          "fontWeight": "bold"
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 180525,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 1,
+        "type": "paragraph",
+        "stepId": 105018,
+        "default": "",
+        "label": "Reviewing submission explanation",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "content": "<p style=\"text-align: center;\">Thank you for signing up for an Animology trade account. We will aim to approve your account within 24 hours. If you have applied at a weekend or during public holidays, please allow up to 72 hours. If you have any queries, please contact us at <a class=\"\" href=\"mailto:shop@animology.co.uk\">shop@animology.co.uk<\/a>.<\/p>",
+          "fontSize": 14,
+          "hideLabel": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 101031,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 2,
+        "type": "link",
+        "stepId": 105018,
+        "default": "",
+        "label": "Back to home link",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12,
+          "alignment": "center"
+        },
+        "settings": {
+          "url": "\/",
+          "content": "Back to home",
+          "fontSize": 14,
+          "hideLabel": true,
+          "fontWeight": "normal",
+          "openInNewTab": false
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 900615,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 0,
+        "type": "heading",
+        "stepId": 228625,
+        "default": "",
+        "label": "Trade account heading",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12,
+          "alignment": "left"
+        },
+        "settings": {
+          "size": 1,
+          "content": "Trade Account",
+          "hideLabel": true,
+          "fontWeight": "bold"
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 188382,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 1,
+        "type": "paragraph",
+        "stepId": 228625,
+        "default": "",
+        "label": "New paragraph field",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "content": "<p>Apply for your Animology trade account below today. We will check your details and approve your account within 24 hours* to get you up and running as quickly as possible.<\/p>\n<p><strong>Please note that online trade accounts are only available for businesses within the UK.<\/strong> If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.<\/p>",
+          "fontSize": 14,
+          "hideLabel": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 494462,
+        "dataColumn": {
+          "key": "i_agree_not_to_sell_the_an",
+          "label": "I agree not to sell the Animology line of products on Amazon.",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 10,
+        "type": "checkbox",
+        "stepId": 228625,
+        "default": "",
+        "label": "I agree not to sell the Animology line of products on Amazon.",
+        "placeholder": null,
+        "description": "We are no longer allowing any Animology products to be sold on any Amazon sites. Please check the box to acknowledge this notice.",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "You must accept that you will not sell Animology products on Amazon"
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 137131,
+        "dataColumn": {
+          "key": "wholesale_terms_agreement",
+          "label": "I agree to Wholesale Terms ",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 11,
+        "type": "checkbox",
+        "stepId": 228625,
+        "default": "",
+        "label": "I agree to Trade Terms ",
+        "placeholder": null,
+        "description": "Please read our terms here: <a href=\"#\" target=\"_blank\" style=\"text-decoration: underline;\">Terms and Conditions<\/a>",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "You must accept Wholesale Terms"
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 143607,
+        "dataColumn": {
+          "key": "default_address.country",
+          "label": "Country",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "dropdown",
+        "stepId": 228625,
+        "default": "United Kingdom",
+        "label": "Your business is located within",
+        "placeholder": "Select a country...",
+        "description": "",
+        "enum": [
+          {
+            "label": "",
+            "value": ""
+          }
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "isCountryField": true
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          },
+          {
+            "metadata": {
+            },
+            "operator": "equals",
+            "comparand": "United Kingdom",
+            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor."
+          }
+        ],
+        "sensitive": null,
+        "preset": "country",
+        "autotag": null
+      },
+      {
+        "id": 105435,
+        "dataColumn": {
+          "key": "default_address.company",
+          "label": "Company",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 3,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Business Name",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "company",
+        "autotag": null
+      },
+      {
+        "id": 549449,
+        "dataColumn": {
+          "key": "default_address.address1",
+          "label": "Address line 1",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 4,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Address line 1",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "address1",
+        "autotag": null
+      },
+      {
+        "id": 166013,
+        "dataColumn": {
+          "key": "default_address.address2",
+          "label": "Address line 2",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 5,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Address line 2",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": "address2",
+        "autotag": null
+      },
+      {
+        "id": 115461,
+        "dataColumn": {
+          "key": "default_address.city",
+          "label": "City",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 6,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "City",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "city",
+        "autotag": null
+      },
+      {
+        "id": 361859,
+        "dataColumn": {
+          "key": "default_address.province",
+          "label": "State\/Province",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 7,
+        "type": "dropdown",
+        "stepId": 228625,
+        "default": "",
+        "label": "State\/Province",
+        "placeholder": "Select a state\/province...",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "defaultCountry": "Canada",
+          "isProvinceField": true
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "province",
+        "autotag": null
+      },
+      {
+        "id": 649081,
+        "dataColumn": {
+          "key": "default_address.zip",
+          "label": "Zip\/Postal code",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 8,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Zip\/Postal code",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "zip",
+        "autotag": null
+      },
+      {
+        "id": 213164,
+        "dataColumn": {
+          "key": "default_address.phone",
+          "label": "Address phone number",
+          "dataType": "phone"
+        },
+        "parentId": null,
+        "position": 9,
+        "type": "phone",
+        "stepId": 228625,
+        "default": "",
+        "label": "Phone number",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "defaultCountryCode": "GB"
+        },
+        "validations": [
+          {
+            "operator": "is_valid",
+            "comparand": null,
+            "errorMessage": "Please provide a valid phone number"
+          },
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "phone_number",
+        "autotag": null
+      },
+      {
+        "id": 554233,
+        "dataColumn": {
+          "key": "first_name",
+          "label": "First name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 0,
+        "type": "text",
+        "stepId": 529971,
+        "default": "",
+        "label": "First name",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 6
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "first_name",
+        "autotag": null
+      },
+      {
+        "id": 105979,
+        "dataColumn": {
+          "key": "last_name",
+          "label": "Last name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 1,
+        "type": "text",
+        "stepId": 529971,
+        "default": "",
+        "label": "Last name",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 6
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "last_name",
+        "autotag": null
+      },
+      {
+        "id": 156535,
+        "dataColumn": {
+          "key": "email",
+          "label": "Email address",
+          "dataType": "email"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "email",
+        "stepId": 529971,
+        "default": "",
+        "label": "Email address",
+        "placeholder": "",
+        "description": "Used for account login and order notifications",
+        "enum": null,
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+          {
+            "operator": "is_valid_email",
+            "comparand": null,
+            "errorMessage": "Please provide a valid email address"
+          },
+          {
+            "metadata": {
+              "hiddenInApp": true
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
+          }
+        ],
+        "sensitive": null,
+        "preset": "email_address",
+        "autotag": null
+      },
+      {
+        "id": 207090,
+        "dataColumn": {
+          "key": "accepts_marketing",
+          "label": "Accepts marketing",
+          "dataType": "boolean"
+        },
+        "parentId": null,
+        "position": 3,
+        "type": "checkbox",
+        "stepId": 529971,
+        "default": true,
+        "label": "Subscribe to our email newsletter",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": "accepts_marketing",
+        "autotag": null
+      }
+    ],
+    "steps": [
+      {
+        "id": 228625,
+        "title": "Trade Details",
+        "description": ""
+      },
+      {
+        "id": 529971,
+        "title": "Standard Signup",
+        "description": ""
+      },
+      {
+        "id": 105018,
+        "title": "Submission success",
+        "metadata": {
+          "isSuccessStep": true
+        },
+        "description": ""
+      }
+    ],
+    "rules": [
+      {
+        "id": 271398,
+        "title": "Show \"Wholesale\" step and tag customer",
+        "actions": [
+          {
+            "effect": "tag_customer",
+            "metadata": {
+              "value": "wholesale"
+            }
+          }
+        ],
+        "conditions": [
+
+        ],
+        "conditionChaining": "all"
+      },
+      {
+        "id": 195628,
+        "title": "Show tax exempt upload field",
+        "actions": [
+          {
+            "effect": "show_field",
+            "metadata": {
+              "fieldId": 134858
+            }
+          }
+        ],
+        "conditions": [
+          {
+            "operand": null,
+            "metadata": {
+              "column": {
+                "key": "tax_exempt",
+                "label": "Tax exempt",
+                "dataType": "boolean"
+              }
+            },
+            "operator": "is_true"
+          }
+        ],
+        "conditionChaining": "all"
+      }
+    ]
+  }
+}
