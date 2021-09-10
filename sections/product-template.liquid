@@ -336,9 +336,14 @@
             <button type="submit" name="add" id="AddToCart" class="btn {{ btn_class }}{% if section.settings.enable_payment_button and product.selling_plan_groups == empty %} btn--secondary{% endif %}">
               <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
             </button>
-            {% if section.settings.enable_payment_button %}
-              {{ form | payment_button }}
+
+            {% if customer.tags != 'wholesale' %}
+              {% if section.settings.enable_payment_button %}
+                {{ form | payment_button }}
+              {% endif %}
             {% endif %}
+
+
           {% endform %}
 
           {% unless section.settings.show_extra_tab == false or pages[section.settings.extra_tab_content] == empty %}
