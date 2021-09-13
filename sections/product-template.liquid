@@ -412,6 +412,9 @@
             <div class="product-description rte" itemprop="description">
               {{ product.description }}
             </div>
+          
+          <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
           {% endunless %}
 
           {% if section.settings.social_sharing %}
