@@ -45,9 +45,10 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2021-09-10T10:40:28Z",
     "revision_ids": [
+      "wDTKlLR",
       "Z6Trnag",
-      "K0TgERA",
       "yzTgpOK",
+      "K0TgERA",
       "vbT0edV",
       "VNT3n3x",
       "wDTKl5P",
@@ -57,9 +58,9 @@
     ]
   },
   "revision": {
-    "id": "Z6Trnag",
-    "created_at": "2021-09-10T10:41:37Z",
-    "updated_at": "2021-09-10T10:41:37Z",
+    "id": "wDTKlLR",
+    "created_at": "2021-09-13T13:11:54Z",
+    "updated_at": "2021-09-13T13:11:54Z",
     "embed_version": "4.6.0",
     "published_at": null,
     "fields": [
@@ -262,43 +263,6 @@
             "operator": "not_blank",
             "comparand": "",
             "errorMessage": "You must accept that you will not sell Animology products on Amazon",
-            "metadata": {
-              "hiddenInApp": true
-            }
-          }
-        ],
-        "sensitive": null,
-        "preset": null,
-        "autotag": null
-      },
-      {
-        "id": 137131,
-        "dataColumn": {
-          "key": "wholesale_terms_agreement",
-          "label": "I agree to Wholesale Terms ",
-          "dataType": "boolean"
-        },
-        "parentId": null,
-        "position": 11,
-        "type": "checkbox",
-        "stepId": 228625,
-        "default": "",
-        "label": "I agree to Trade Terms ",
-        "placeholder": null,
-        "description": "Please read our terms here: <a href=\"#\" target=\"_blank\" style=\"text-decoration: underline;\">Terms and Conditions<\/a>",
-        "enum": [
-
-        ],
-        "appearance": {
-          "width": 12
-        },
-        "settings": {
-        },
-        "validations": [
-          {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "You must accept Wholesale Terms",
             "metadata": {
               "hiddenInApp": true
             }
