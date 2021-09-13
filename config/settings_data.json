@@ -303,7 +303,7 @@
           "title_2": "Find an Animology Stockist",
           "text_2": "<p>Need it today? Click the button below to help you find your nearest stockist of Animology products.<br\/><\/p><p>Use our store finder to find a stockist near you.<\/p><p><\/p><p><\/p>",
           "button_label_2": "Find a stockist",
-          "button_link_2": "shopify:\/\/collections"
+          "button_link_2": "shopify:\/\/pages\/stockist-locator"
         }
       },
       "list-collections-template": {
