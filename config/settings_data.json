@@ -154,11 +154,12 @@
           "slider-3": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Shampoo2.jpg",
               "alignment": "center center",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
               "text_alignment": "center",
-              "slide_heading": "Image slide",
+              "slide_heading": "",
               "text_1": "",
               "button_label": "",
               "button_link": ""
