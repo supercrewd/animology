@@ -97,6 +97,7 @@
                      data-sizes="auto"
                      data-image>
               </div>
+              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
             </div>
           {% else %}
             <img src="{{ featured.featured_image.src | img_url: 'large' }}" alt="{{ featured.featured_image.alt | escape }}" class="product__img" data-image>
@@ -140,5 +141,5 @@
       </p>
     {% endif %}
   </a>
-  <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+  
 </div>
