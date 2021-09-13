@@ -76,6 +76,13 @@
               "menu": "customer-service"
             }
           },
+          "ffa719ca-bdf7-4305-b5aa-fa0dcfc7c3ef": {
+            "type": "menu",
+            "settings": {
+              "menu_title": "Trade",
+              "menu": ""
+            }
+          },
           "footer-2": {
             "type": "social",
             "settings": {
@@ -91,6 +98,7 @@
         "block_order": [
           "footer-1",
           "1ea06915-ed1c-4376-bb3c-33cd06fade5b",
+          "ffa719ca-bdf7-4305-b5aa-fa0dcfc7c3ef",
           "footer-2",
           "footer-3"
         ],
