@@ -140,14 +140,15 @@
           "slider-2": {
             "type": "image",
             "settings": {
-              "alignment": "center center",
+              "image": "shopify:\/\/shop_images\/ADE250_-_Animology_Derma_Dog_-_Woody_Bulldog.jpg",
+              "alignment": "right center",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "Image slide",
-              "text_1": "",
-              "button_label": "",
-              "button_link": ""
+              "text_alignment": "right",
+              "slide_heading": "Derma Dog Shampoo",
+              "text_1": "<p><em>A mild shampoo for dogs with extra sensitive skin.<\/em><\/p>",
+              "button_label": "View Product",
+              "button_link": "shopify:\/\/products\/derma-dog"
             }
           },
           "slider-3": {
