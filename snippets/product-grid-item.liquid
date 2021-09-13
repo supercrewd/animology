@@ -96,9 +96,9 @@
                      data-aspectratio="{{ featured.featured_image.aspect_ratio }}"
                      data-sizes="auto"
                      data-image>
-              </div>
+              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span></div>
               
-            </div><span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+            </div>
           {% else %}
             <img src="{{ featured.featured_image.src | img_url: 'large' }}" alt="{{ featured.featured_image.alt | escape }}" class="product__img" data-image>
           {% endunless %}
