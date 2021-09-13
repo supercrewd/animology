@@ -80,7 +80,7 @@
             "type": "menu",
             "settings": {
               "menu_title": "Trade",
-              "menu": ""
+              "menu": "footer-trade"
             }
           },
           "footer-2": {
