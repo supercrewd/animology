@@ -307,6 +307,12 @@
 I agree with the <a href="Replace with your link to terms and conditions here">terms and conditions</a>.
 </label>
 </p>
+          
+          {%- if additional_checkout_buttons -%}
+<div id="additional-buttons-c" class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
+{%- endif -%}
+          
+          
             <button type="submit" name="update" class="btn btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>
             <button type="submit" name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
 
