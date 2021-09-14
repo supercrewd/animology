@@ -301,7 +301,12 @@
             {% endcomment %}
             <a class="btn btn--secondary" href="{{ routes.all_products_collection_url }}">{{ 'cart.general.continue_shopping' | t }}</a>
          
-
+<p style="float: none; text-align: right; clear: both; margin: 10px 0;">
+<input style="float:none; vertical-align: middle;" type="checkbox" id="agree" required="required" />
+<label style="display:inline; float:none" for="agree">
+Please check this box to agree to our updated <a href="/pages/amazon-policy">Amazon policy</a>.
+</label>
+</p>
             <button type="submit" name="update" class="btn btn--secondary update-cart">{{ 'cart.general.update' | t }}</button>
             <button type="submit" name="checkout" class="btn">{{ 'cart.general.checkout' | t }}</button>
 
