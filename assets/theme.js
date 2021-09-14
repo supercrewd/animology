@@ -1896,3 +1896,15 @@ $(theme.init);
       }
     });
   });
+  
+  $("#additional-buttons-c").addClass("div-disabled");
+$(document).ready(function() {
+  $('body').on('click', '[name="agree"]', function() {
+    if ($('#agree').is(':checked')) {
+      $("#additional-buttons-c").removeClass("div-disabled");
+    }
+    else {
+      $("#additional-buttons-c").addClass("div-disabled");
+    }
+  });
+});
