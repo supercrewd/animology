@@ -1885,14 +1885,3 @@ theme.equalHeights = function($selector) {
 // Initialize theme's JS on docready
 $(theme.init);
 
- $(document).ready(function() {
-    $('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
-      if ($('#agree').is(':checked')) {
-        $(this).submit();
-      }
-      else {
-        alert("You must agree with the terms and conditions of sales to check out.");
-        return false;
-      }
-    });
-  });
