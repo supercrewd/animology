@@ -413,7 +413,7 @@
               {{ product.description }}
             </div>
           
-          <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+          
 
           {% endunless %}
 
@@ -423,7 +423,7 @@
             {% include 'social-sharing' %}
           {% endif %}
         </div>
-
+<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
       </div>
     </div>
   </div>
