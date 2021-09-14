@@ -3170,3 +3170,8 @@ input.cart__quantity-selector {
 [data-shopify-buttoncontainer] {
   justify-content: flex-end;
 }
+
+.div-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
