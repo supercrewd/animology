@@ -190,7 +190,7 @@
           "show_extra_tab": false,
           "extra_tab_content": "",
           "extra_tab_content_2": "",
-          "social_sharing": false,
+          "social_sharing": true,
           "enable_payment_button": true,
           "add_to_cart_width": "small"
         }
