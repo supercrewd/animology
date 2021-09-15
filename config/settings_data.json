@@ -90,6 +90,7 @@
           },
           "footer-3": {
             "type": "newsletter",
+            "disabled": true,
             "settings": {
               "subtext": "<p>Sign up for the latest news, offers and styles<\/p>"
             }
