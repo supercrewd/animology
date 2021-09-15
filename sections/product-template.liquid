@@ -211,7 +211,7 @@
         {% endif %}
         <h1 class="product-single__title" itemprop="name">{{ product.title }}</h1>
 
-        <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>    
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
 
         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           {% assign variant = product.selected_or_first_available_variant %}
