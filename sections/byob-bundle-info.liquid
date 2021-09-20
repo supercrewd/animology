@@ -1,0 +1,172 @@
+<!-- Shopify app - BYOB (Build Your Own Bundle) v0.41 -->
+<!-- Benny Chan © 2021 SillyCube Technology Ltd.  All rights reserved.  -->
+<!-- https://apps.shopify.com/byob-build-your-own-bundle -->
+<style>
+.byob-section-wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+img {
+    max-width: 100%;
+}
+.byob-bundle-description   {
+  font-size: {{ section.settings.description_font_size }}px;
+}
+.byob-bundle-description-warning {
+  display:none
+}
+.padding-top {
+  padding-top: {{ section.settings.image_header_padding }}px;
+}
+/* Custom CSS BEGIN */
+{{ section.settings.custom_css }}
+/* Custom CSS END */
+</style>
+{% if section.settings.byob_section_wrapper %}{%- assign wrapper-class = 'byob-section-wrapper' -%}{% endif %}
+<div id="textsection" class="page-width {{ wrapper-class }}">
+  {% case section.settings.align_text %}
+    {% when 'left' %}
+    	{%- assign text-classes = 'text-left' -%}
+    {% when 'center' %}
+    	{%- assign text-classes = 'text-center' -%}
+    {% when 'right' %}
+    	{%- assign text-classes = 'text-right' -%}
+  {% endcase %}
+
+  {% case section.settings.media_size %}
+    {% when 'medium' %}
+      {%- assign product_media_width = 'medium-up--one-half' -%}
+    {% when 'large' %}
+      {%- assign product_media_width = 'medium-up--two-thirds' -%}
+    {% when 'full' %}
+      {%- assign product_media_width = 'medium-up--one-whole' -%}
+  {% endcase %}
+  <div class="text-center content-center {{ product_media_width }}">
+    {% if product.featured_media.alt %}<img src="{{ product.featured_media | img_url: 'master' }}" alt="{{ product.featured_media.alt }}" >{% endif %}
+      {% if request.design_mode %}{% endif %}
+  </div>
+  <div class="{{ text-classes }} padding-top">
+    <h1> {{ product.title }} </h1>
+    <p class="byob-bundle-description"> {{ product.description }} </p>
+    <p class="byob-bundle-description-warning" style="color: red">Please wait for a few seconds on the checkout page so the products can be loaded into your cart. </p>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "BYOB Bundle Info",
+    "settings": [
+	  {
+        "type": "radio",
+        "id": "media_size",
+        "label": "Bundle image size",
+        "default": "full",
+        "options": [
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "full",
+            "label": "Full"
+          }
+        ]
+      },
+	  {
+        "type": "range",
+        "id": "image_header_padding",
+        "label": "Padding between image and title",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "byob_section_wrapper",
+        "label": "Add a wrapper",
+        "info": "If the bundle image is too large, your theme may need a wrapper",
+        "default": false
+      },
+	  {
+        "type": "radio",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+	  {
+        "type": "range",
+        "id": "description_font_size",
+        "label": "Description font size",
+        "min": 10,
+        "max": 24,
+        "step": 1,
+        "default": 15
+      },
+      {
+         "type": "paragraph",
+         "content": "Tips: The Product Selection tabs may disappear after option changes. Just hit the 'Save' button and the product tabs will be re-rendered"
+      },
+	  {
+        "type": "header",
+        "content": "Advance"
+	  },
+	  {
+        "type": "paragraph",
+        "content": "Leave it alone if you're not going to make fine customizations"
+      },
+	  {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+/* Whole */
+.medium-up--one-whole {
+    width: 100%;
+}
+/* Halves */
+.medium-up--one-half {
+	width: 50%;
+}
+/* Thirds */
+.medium-up--one-third {
+	width: 33.33333%;
+}
+.medium-up--two-thirds {
+    width: 66.66667%;
+}
+.content-center {
+  margin: 0 auto;
+}
+{% endstylesheet %}
