@@ -3,7 +3,7 @@
     "byob-bundle-info": {
       "type": "byob-bundle-info",
       "settings": {
-        "media_size": "full",
+        "media_size": "medium",
         "image_header_padding": 0,
         "byob_section_wrapper": false,
         "align_text": "center",
@@ -16,13 +16,13 @@
       "settings": {
         "items_per_row": 4,
         "byob_section_wrapper": true,
-        "card_background": "#fff",
-        "tab_color": "#eee",
+        "card_background": "#ffffff",
+        "tab_color": "#eeeeee",
         "tick_icon_color": "#008000",
         "button_color": "#1878b9",
-        "button_text_color": "#fff",
+        "button_text_color": "#ffffff",
         "background_color": "#212121",
-        "footer_product_name_color": "#fff",
+        "footer_product_name_color": "#ffffff",
         "footer_show_product_title": true,
         "footer_show_total_price": true,
         "footer_bottom_position": 10,
