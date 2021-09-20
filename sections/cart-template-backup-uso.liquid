@@ -137,9 +137,6 @@
                 <div class="grid__item two-thirds">
                   <a href="{{ item.url }}" class="h5 cart__product-title">
                     {{ item.product.title }}
-<span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
-<span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>
-                                
                   </a>
                   {% unless item.product.has_only_default_variant %}
                     <br>
@@ -282,10 +279,7 @@
                 </div>
               {%- endif -%}
               <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-              <span style="display: block; text-align: right;" class="saw-extra-note"></span><span class="saw-cart-original-total">
-<span class="saso-cart-original-total"><span class="h5 cart__subtotal-price">{{ cart.total_price | money }}</span></span>
-<span class="saso-cart-total"></span>
-</span><br><span class="saw-cart-total"></span>
+              <span style="display: block; text-align: right;" class="saw-extra-note"></span><span class="saw-cart-original-total"><span class="h5 cart__subtotal-price">{{ cart.total_price | money }}</span></span><br><span class="saw-cart-total"></span>
             </p>
 
             {%- capture taxes_shipping_checkout -%}
