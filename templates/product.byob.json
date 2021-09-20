@@ -3,11 +3,33 @@
     "byob-bundle-info": {
       "type": "byob-bundle-info",
       "settings": {
+        "media_size": "full",
+        "image_header_padding": 0,
+        "byob_section_wrapper": false,
+        "align_text": "center",
+        "description_font_size": 15,
+        "custom_css": ""
       }
     },
     "byob-product-grid": {
       "type": "byob-product-grid",
       "settings": {
+        "items_per_row": 4,
+        "byob_section_wrapper": false,
+        "card_background": "#fff",
+        "tab_color": "#eee",
+        "tick_icon_color": "#008000",
+        "button_color": "#1878b9",
+        "button_text_color": "#fff",
+        "background_color": "#e8e8e8",
+        "footer_product_name_color": "#fff",
+        "footer_show_product_title": true,
+        "footer_show_total_price": true,
+        "footer_bottom_position": 10,
+        "product_card_padding": 5,
+        "icon_type": "bag",
+        "beacon_color": "#1878b9",
+        "icon_horizontal_position": "left"
       }
     },
     "byob-footer": {
@@ -18,6 +40,8 @@
     "byob-confirm-modal": {
       "type": "byob-confirm-modal",
       "settings": {
+        "button_color": "",
+        "button_text_color": ""
       }
     }
   },
