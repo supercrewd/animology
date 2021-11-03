@@ -297,6 +297,7 @@
       },
       "163041026134736680": {
         "type": "feature-column-2",
+        "disabled": true,
         "settings": {
           "alignment": "top",
           "image_1": "shopify:\/\/shop_images\/animology_540x_538091f9-2cff-470f-96b2-3846e9f3a4db.png",
@@ -328,6 +329,17 @@
           "show_sale_circle": false,
           "center_grid_link": true
         }
+      },
+      "1635956425ff0ec4fc": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/animology_e6c84436-085d-4d80-aba7-038283a696ab.png",
+          "layout": "left",
+          "title": "Award Winning Pet Care Products",
+          "text": "<p>Animology is the multi-award winning pet care product brand that is trusted by pet owners, vets, retailers, groomers and championship show dog owners in more than 50 countries around the world to deliver the very highest standards of pet care.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
@@ -335,7 +347,8 @@
       "collection-list",
       "162938862039f202ff",
       "16300537177887817a",
-      "163041026134736680"
+      "163041026134736680",
+      "1635956425ff0ec4fc"
     ]
   },
   "presets": {
