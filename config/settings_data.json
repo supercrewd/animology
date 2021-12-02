@@ -57,8 +57,8 @@
           "left_aligned_logo": true,
           "show_header_lines": false,
           "show_announcement": true,
-          "header_text": "Welcome to our new website!",
-          "announcement_link": ""
+          "header_text": "Welcome to our new website! Please click here for more information regarding your existing account with us.",
+          "announcement_link": "shopify:\/\/pages\/new-website"
         }
       },
       "footer": {
