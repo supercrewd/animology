@@ -112,6 +112,20 @@
       "slider": {
         "type": "slider",
         "blocks": {
+          "slider-3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Stink_Bomb_b4775553-325b-4443-b9ff-5ac843ef49bb.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 30,
+              "color_text": "#ffffff",
+              "text_alignment": "right",
+              "slide_heading": "Stink Bomb Shampoo",
+              "text_1": "<p><em>A scented, deodorising dog spray enriched with vitamins & conditioners to help reduce odour.<\/em><\/p>",
+              "button_label": "View Product",
+              "button_link": "shopify:\/\/products\/stink-bomb"
+            }
+          },
           "slider-0": {
             "type": "image",
             "settings": {
@@ -124,20 +138,6 @@
               "text_1": "<p><em>A mild, yet deep cleaning every-day shampoo that removes dirt & odour.<\/em><\/p>",
               "button_label": "View Product",
               "button_link": "shopify:\/\/products\/dogs-body"
-            }
-          },
-          "slider-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Facebook-February-2018.jpg",
-              "alignment": "center top",
-              "overlay_opacity": 30,
-              "color_text": "#ffffff",
-              "text_alignment": "left",
-              "slide_heading": "Puppy Love Shampoo",
-              "text_1": "<p>A mild shampoo suitable for puppies from 6 weeks old & infused with our 'Puppy' scent.<\/p>",
-              "button_label": "View Product",
-              "button_link": "shopify:\/\/products\/puppy-love"
             }
           },
           "slider-2": {
@@ -154,26 +154,26 @@
               "button_link": "shopify:\/\/products\/derma-dog"
             }
           },
-          "slider-3": {
+          "slider-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Shampoo2.jpg",
-              "alignment": "center center",
+              "image": "shopify:\/\/shop_images\/Facebook-February-2018.jpg",
+              "alignment": "center top",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "",
-              "text_1": "",
-              "button_label": "",
-              "button_link": ""
+              "text_alignment": "left",
+              "slide_heading": "Puppy Love Shampoo",
+              "text_1": "<p><em>A mild shampoo suitable for puppies from 6 weeks old & infused with our 'Puppy' scent.<\/em><\/p>",
+              "button_label": "View Product",
+              "button_link": "shopify:\/\/products\/puppy-love"
             }
           }
         },
         "block_order": [
+          "slider-3",
           "slider-0",
-          "slider-1",
           "slider-2",
-          "slider-3"
+          "slider-1"
         ],
         "settings": {
           "slider_height": "small",
