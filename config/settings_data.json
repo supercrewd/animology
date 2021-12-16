@@ -177,7 +177,7 @@
         ],
         "settings": {
           "slider_height": "small",
-          "slider_autorotate": false,
+          "slider_autorotate": true,
           "slider_autorotate_rate": 5,
           "slider_home_transition": "fade",
           "text_size": "medium"
