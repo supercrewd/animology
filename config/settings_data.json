@@ -115,7 +115,7 @@
           "slider-3": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner1.jpg",
+              "image": "shopify:\/\/shop_images\/banner1-1.jpg",
               "alignment": "center center",
               "overlay_opacity": 0,
               "color_text": "#ffffff",
