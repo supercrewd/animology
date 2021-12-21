@@ -115,7 +115,7 @@
           "slider-3": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Stink_Bomb_b4775553-325b-4443-b9ff-5ac843ef49bb.jpg",
+              "image": "shopify:\/\/shop_images\/banner.jpg",
               "alignment": "center center",
               "overlay_opacity": 30,
               "color_text": "#ffffff",
