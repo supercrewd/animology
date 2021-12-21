@@ -129,15 +129,15 @@
           "slider-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Animology-Dogs-Body.jpg",
+              "image": "shopify:\/\/shop_images\/banner3.jpg",
               "alignment": "center center",
-              "overlay_opacity": 30,
+              "overlay_opacity": 0,
               "color_text": "#ffffff",
               "text_alignment": "left",
-              "slide_heading": "Dogs Body Shampoo",
-              "text_1": "<p><em>A mild, yet deep cleaning every-day shampoo that removes dirt & odour.<\/em><\/p>",
-              "button_label": "View Product",
-              "button_link": "shopify:\/\/products\/dogs-body"
+              "slide_heading": "",
+              "text_1": "",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "slider-2": {
