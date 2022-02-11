@@ -45,16 +45,16 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "1wTxDGZ",
+      "9pTnm1v",
+      "6XTxZ4x",
       "wDTKMX5",
       "Z6Trnag",
       "K0TgERA",
-      "6XTxZ4x",
-      "9pTnm1v",
       "wDTKl5P",
       "VNT3n3x",
       "vbT0edV",
       "xMTxkm4",
-      "1wTxDGZ",
       "wDTKlLR",
       "yzTgpOK",
       "akTzqzn",
@@ -65,9 +65,9 @@
   "revision": {
     "id": "wDTKMX5",
     "created_at": "2022-02-11T11:21:35Z",
-    "updated_at": "2022-02-11T11:21:35Z",
+    "updated_at": "2022-02-11T11:21:36Z",
     "embed_version": "4.9.0",
-    "published_at": null,
+    "published_at": "2022-02-11T11:21:36Z",
     "fields": [
       {
         "id": 306458,
@@ -208,8 +208,8 @@
         "description": "",
         "enum": [
           {
-            "value": "",
-            "label": ""
+            "label": "",
+            "value": ""
           }
         ],
         "appearance": {
@@ -221,19 +221,19 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           },
           {
+            "metadata": {
+            },
             "operator": "equals",
             "comparand": "United Kingdom",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
+            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor."
           }
         ],
         "sensitive": null,
@@ -265,12 +265,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "You must accept that you will not sell Animology products on Amazon",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "You must accept that you will not sell Animology products on Amazon"
           }
         ],
         "sensitive": null,
@@ -302,12 +302,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -339,12 +339,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -406,12 +406,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -445,12 +445,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -482,12 +482,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -525,12 +525,12 @@
             "errorMessage": "Please provide a valid phone number"
           },
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -590,12 +590,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -625,12 +625,12 @@
         },
         "validations": [
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -665,12 +665,12 @@
             "errorMessage": "Please provide a valid email address"
           },
           {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
             "metadata": {
               "hiddenInApp": true
-            }
+            },
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank"
           }
         ],
         "sensitive": null,
@@ -722,20 +722,16 @@
       {
         "id": 105018,
         "title": "Submission success",
-        "description": "",
         "metadata": {
           "isSuccessStep": true
-        }
+        },
+        "description": ""
       }
     ],
     "rules": [
       {
         "id": 271398,
         "title": "Show \"Wholesale\" step and tag customer",
-        "conditionChaining": "all",
-        "conditions": [
-
-        ],
         "actions": [
           {
             "effect": "tag_customer",
@@ -743,33 +739,15 @@
               "value": "wholesale"
             }
           }
-        ]
+        ],
+        "conditions": [
+
+        ],
+        "conditionChaining": "all"
       },
       {
         "id": 174393,
         "title": "Hide field",
-        "conditionChaining": "all",
-        "conditions": [
-          {
-            "operand": null,
-            "operator": "not_equals",
-            "metadata": {
-              "comparand": "United Kingdom",
-              "column": {
-                "id": null,
-                "key": "default_address.country",
-                "label": "Country",
-                "dataType": "text",
-                "favorite": false,
-                "readOnly": false,
-                "createdAt": null,
-                "dedicated": true,
-                "archivedAt": null,
-                "expandedLabel": "Country"
-              }
-            }
-          }
-        ],
         "actions": [
           {
             "effect": "hide_step",
@@ -842,7 +820,29 @@
               "fieldId": 342539
             }
           }
-        ]
+        ],
+        "conditions": [
+          {
+            "operand": null,
+            "metadata": {
+              "column": {
+                "id": null,
+                "key": "default_address.country",
+                "label": "Country",
+                "dataType": "text",
+                "favorite": false,
+                "readOnly": false,
+                "createdAt": null,
+                "dedicated": true,
+                "archivedAt": null,
+                "expandedLabel": "Country"
+              },
+              "comparand": "United Kingdom"
+            },
+            "operator": "not_equals"
+          }
+        ],
+        "conditionChaining": "all"
       }
     ]
   }
