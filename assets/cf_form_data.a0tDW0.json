@@ -45,23 +45,24 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "xMTxkm4",
       "1wTxDGZ",
+      "wDTKl5P",
+      "VNT3n3x",
+      "vbT0edV",
+      "K0TgERA",
+      "Z6Trnag",
       "wDTKlLR",
       "yzTgpOK",
-      "Z6Trnag",
-      "K0TgERA",
-      "vbT0edV",
-      "VNT3n3x",
-      "wDTKl5P",
       "akTzqzn",
       "ErTA0An",
       "9pTn8nm"
     ]
   },
   "revision": {
-    "id": "1wTxDGZ",
-    "created_at": "2022-02-11T11:16:15Z",
-    "updated_at": "2022-02-11T11:16:15Z",
+    "id": "xMTxkm4",
+    "created_at": "2022-02-11T11:17:48Z",
+    "updated_at": "2022-02-11T11:17:48Z",
     "embed_version": "4.9.0",
     "published_at": null,
     "fields": [
@@ -226,28 +227,7 @@
           },
           {
             "operator": "equals",
-            "comparand": "United Kingdom",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
-          },
-          {
-            "operator": "equals",
-            "comparand": "Guernsey",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
-          },
-          {
-            "operator": "equals",
-            "comparand": "Isle Of Man",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
-          },
-          {
-            "operator": "equals",
-            "comparand": "Jersey",
+            "comparand": "United Kingdom, Guernsey",
             "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
             "metadata": {
             }
