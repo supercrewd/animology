@@ -45,13 +45,14 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "wDTKMX5",
+      "Z6Trnag",
+      "K0TgERA",
       "6XTxZ4x",
       "9pTnm1v",
       "wDTKl5P",
       "VNT3n3x",
       "vbT0edV",
-      "K0TgERA",
-      "Z6Trnag",
       "xMTxkm4",
       "1wTxDGZ",
       "wDTKlLR",
@@ -62,9 +63,9 @@
     ]
   },
   "revision": {
-    "id": "6XTxZ4x",
-    "created_at": "2022-02-11T11:20:07Z",
-    "updated_at": "2022-02-11T11:20:07Z",
+    "id": "wDTKMX5",
+    "created_at": "2022-02-11T11:21:35Z",
+    "updated_at": "2022-02-11T11:21:35Z",
     "embed_version": "4.9.0",
     "published_at": null,
     "fields": [
@@ -231,13 +232,6 @@
             "operator": "equals",
             "comparand": "United Kingdom",
             "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
-          },
-          {
-            "operator": "equals",
-            "comparand": "Jersey",
-            "errorMessage": "Input value is invalid",
             "metadata": {
             }
           }
