@@ -45,13 +45,14 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "9pTnm1v",
       "xMTxkm4",
-      "1wTxDGZ",
-      "wDTKl5P",
-      "VNT3n3x",
-      "vbT0edV",
-      "K0TgERA",
       "Z6Trnag",
+      "K0TgERA",
+      "vbT0edV",
+      "VNT3n3x",
+      "wDTKl5P",
+      "1wTxDGZ",
       "wDTKlLR",
       "yzTgpOK",
       "akTzqzn",
@@ -60,9 +61,9 @@
     ]
   },
   "revision": {
-    "id": "xMTxkm4",
-    "created_at": "2022-02-11T11:17:48Z",
-    "updated_at": "2022-02-11T11:17:48Z",
+    "id": "9pTnm1v",
+    "created_at": "2022-02-11T11:18:16Z",
+    "updated_at": "2022-02-11T11:18:16Z",
     "embed_version": "4.9.0",
     "published_at": null,
     "fields": [
@@ -227,7 +228,7 @@
           },
           {
             "operator": "equals",
-            "comparand": "United Kingdom, Guernsey",
+            "comparand": "United Kingdom",
             "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
             "metadata": {
             }
