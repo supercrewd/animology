@@ -285,6 +285,7 @@
       },
       "16300537177887817a": {
         "type": "featured-collection",
+        "disabled": true,
         "settings": {
           "title": "Best Sellers",
           "featured_collection": "best-sellers",
