@@ -355,6 +355,12 @@
           "show_sold_out_circle": false,
           "center_grid_link": true
         }
+      },
+      "164692163720f47056": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<div id=\"instagram-feed-box\"><\/div>\n<div id=\"instagram-stories-box\"><\/div>\n<div id=\"instagram-stories-box\"><\/div>"
+        }
       }
     },
     "content_for_index": [
@@ -364,7 +370,8 @@
       "16300537177887817a",
       "162938862039f202ff",
       "163041026134736680",
-      "1635956425ff0ec4fc"
+      "1635956425ff0ec4fc",
+      "164692163720f47056"
     ]
   },
   "presets": {
