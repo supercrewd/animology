@@ -359,7 +359,7 @@
       "164692163720f47056": {
         "type": "custom-html",
         "settings": {
-          "custom_html": "<div id=\"instagram-feed-box\"><\/div>\n<div id=\"instagram-stories-box\"><\/div>\n<div id=\"instagram-stories-box\"><\/div>"
+          "custom_html": "<div id=\"instagram-feed-box\"><\/div>"
         }
       }
     },
