@@ -358,20 +358,21 @@
       },
       "164692163720f47056": {
         "type": "custom-html",
+        "disabled": true,
         "settings": {
           "custom_html": "<div id=\"instagram-feed-box\"><\/div>"
         }
       }
     },
     "content_for_index": [
+      "164692163720f47056",
       "slider",
       "collection-list",
       "16457844809fafad2d",
       "16300537177887817a",
       "162938862039f202ff",
       "163041026134736680",
-      "1635956425ff0ec4fc",
-      "164692163720f47056"
+      "1635956425ff0ec4fc"
     ]
   },
   "presets": {
