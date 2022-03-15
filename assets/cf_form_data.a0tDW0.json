@@ -45,11 +45,12 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "l5Tpd8k",
+      "wDTKMX5",
       "Z6Trnag",
       "1wTxDGZ",
       "9pTnm1v",
       "6XTxZ4x",
-      "wDTKMX5",
       "K0TgERA",
       "wDTKl5P",
       "VNT3n3x",
@@ -63,11 +64,11 @@
     ]
   },
   "revision": {
-    "id": "wDTKMX5",
-    "created_at": "2022-02-11T11:21:35Z",
-    "updated_at": "2022-02-11T11:22:29Z",
-    "embed_version": "4.9.0",
-    "published_at": "2022-02-11T11:22:29Z",
+    "id": "l5Tpd8k",
+    "created_at": "2022-03-15T08:49:05Z",
+    "updated_at": "2022-03-15T08:49:05Z",
+    "embed_version": "4.9.1",
+    "published_at": null,
     "fields": [
       {
         "id": 306458,
@@ -208,8 +209,8 @@
         "description": "",
         "enum": [
           {
-            "label": "",
-            "value": ""
+            "value": "",
+            "label": ""
           }
         ],
         "appearance": {
@@ -221,23 +222,114 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           },
           {
-            "metadata": {
-            },
             "operator": "equals",
             "comparand": "United Kingdom",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor."
+            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
+            "metadata": {
+            }
           }
         ],
         "sensitive": null,
         "preset": "country",
+        "autotag": null
+      },
+      {
+        "id": 113305,
+        "dataColumn": {
+          "key": "please_select_the_option_t",
+          "label": "Please select the option that best describes  your company",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 10,
+        "type": "radio",
+        "stepId": 228625,
+        "default": "",
+        "label": "Please select the option that best describes  your company",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+          {
+            "value": "Dog Walker",
+            "label": "Dog Walker"
+          },
+          {
+            "value": "Groomer",
+            "label": "Groomer"
+          },
+          {
+            "value": "Pet Specialist",
+            "label": "Pet Specialist"
+          },
+          {
+            "value": "Vet",
+            "label": "Vet"
+          },
+          {
+            "value": "Other (Please specify below)",
+            "label": "Other (Please specify below)"
+          }
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "enumType": "list",
+          "direction": "column",
+          "separateValues": false,
+          "start": 1,
+          "end": 10
+        },
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 508066,
+        "dataColumn": {
+          "key": "other",
+          "label": "Other",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 11,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Other",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
         "autotag": null
       },
       {
@@ -248,7 +340,7 @@
           "dataType": "boolean"
         },
         "parentId": null,
-        "position": 10,
+        "position": 12,
         "type": "checkbox",
         "stepId": 228625,
         "default": "",
@@ -265,12 +357,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "You must accept that you will not sell Animology products on Amazon"
+            "errorMessage": "You must accept that you will not sell Animology products on Amazon",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -302,12 +394,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -339,12 +431,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -406,12 +498,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -445,12 +537,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -482,12 +574,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -525,12 +617,12 @@
             "errorMessage": "Please provide a valid phone number"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -561,7 +653,14 @@
         "settings": {
         },
         "validations": [
-
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
         ],
         "sensitive": null,
         "preset": null,
@@ -590,12 +689,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -625,12 +724,12 @@
         },
         "validations": [
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -665,12 +764,12 @@
             "errorMessage": "Please provide a valid email address"
           },
           {
-            "metadata": {
-              "hiddenInApp": true
-            },
             "operator": "not_blank",
             "comparand": "",
-            "errorMessage": "Must not be blank"
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
           }
         ],
         "sensitive": null,
@@ -722,16 +821,20 @@
       {
         "id": 105018,
         "title": "Submission success",
+        "description": "",
         "metadata": {
           "isSuccessStep": true
-        },
-        "description": ""
+        }
       }
     ],
     "rules": [
       {
         "id": 271398,
         "title": "Show \"Wholesale\" step and tag customer",
+        "conditionChaining": "all",
+        "conditions": [
+
+        ],
         "actions": [
           {
             "effect": "tag_customer",
@@ -739,15 +842,33 @@
               "value": "wholesale"
             }
           }
-        ],
-        "conditions": [
-
-        ],
-        "conditionChaining": "all"
+        ]
       },
       {
         "id": 174393,
         "title": "Hide field",
+        "conditionChaining": "all",
+        "conditions": [
+          {
+            "operand": null,
+            "operator": "not_equals",
+            "metadata": {
+              "comparand": "United Kingdom",
+              "column": {
+                "id": null,
+                "key": "default_address.country",
+                "label": "Country",
+                "dataType": "text",
+                "favorite": false,
+                "readOnly": false,
+                "createdAt": null,
+                "dedicated": true,
+                "archivedAt": null,
+                "expandedLabel": "Country"
+              }
+            }
+          }
+        ],
         "actions": [
           {
             "effect": "hide_step",
@@ -820,29 +941,7 @@
               "fieldId": 342539
             }
           }
-        ],
-        "conditions": [
-          {
-            "operand": null,
-            "metadata": {
-              "column": {
-                "id": null,
-                "key": "default_address.country",
-                "label": "Country",
-                "dataType": "text",
-                "favorite": false,
-                "readOnly": false,
-                "createdAt": null,
-                "dedicated": true,
-                "archivedAt": null,
-                "expandedLabel": "Country"
-              },
-              "comparand": "United Kingdom"
-            },
-            "operator": "not_equals"
-          }
-        ],
-        "conditionChaining": "all"
+        ]
       }
     ]
   }
