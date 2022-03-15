@@ -45,18 +45,19 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "NMTvdkK",
       "3qTeGld",
+      "yzTgpOK",
+      "wDTKlLR",
+      "vbT0edV",
+      "VNT3n3x",
+      "9pTnm1v",
+      "1wTxDGZ",
+      "l5Tpd8k",
       "06TpxNa",
       "wDTKMX5",
-      "l5Tpd8k",
-      "1wTxDGZ",
-      "9pTnm1v",
       "wDTKl5P",
-      "VNT3n3x",
-      "vbT0edV",
       "xMTxkm4",
-      "wDTKlLR",
-      "yzTgpOK",
       "Z6Trnag",
       "6XTxZ4x",
       "K0TgERA",
@@ -66,9 +67,9 @@
     ]
   },
   "revision": {
-    "id": "3qTeGld",
-    "created_at": "2022-03-15T09:01:38Z",
-    "updated_at": "2022-03-15T09:01:38Z",
+    "id": "NMTvdkK",
+    "created_at": "2022-03-15T09:05:24Z",
+    "updated_at": "2022-03-15T09:05:24Z",
     "embed_version": "4.9.1",
     "published_at": null,
     "fields": [
@@ -244,6 +245,34 @@
         "autotag": null
       },
       {
+        "id": 110607,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 10,
+        "type": "divider",
+        "stepId": 228625,
+        "default": "",
+        "label": "New divider field",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "verticalMargin": 20,
+          "hideLabel": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
         "id": 113305,
         "dataColumn": {
           "key": "please_select_the_option_t",
@@ -251,10 +280,10 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 10,
+        "position": 11,
         "type": "radio",
         "stepId": 228625,
-        "default": null,
+        "default": "",
         "label": "Please select the option that best describes  your business",
         "placeholder": "",
         "description": "",
@@ -312,7 +341,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 11,
+        "position": 12,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -335,6 +364,34 @@
         "autotag": null
       },
       {
+        "id": 370402,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 13,
+        "type": "divider",
+        "stepId": 228625,
+        "default": "",
+        "label": "New divider field",
+        "placeholder": "",
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "verticalMargin": 20,
+          "hideLabel": true
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
         "id": 494462,
         "dataColumn": {
           "key": "i_agree_not_to_sell_the_an",
@@ -342,7 +399,7 @@
           "dataType": "boolean"
         },
         "parentId": null,
-        "position": 12,
+        "position": 14,
         "type": "checkbox",
         "stepId": 228625,
         "default": "",
