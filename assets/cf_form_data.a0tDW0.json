@@ -45,16 +45,17 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "wDTKY0e",
       "NMTvdkK",
+      "06TpxNa",
+      "l5Tpd8k",
+      "9pTnm1v",
+      "VNT3n3x",
+      "wDTKlLR",
       "3qTeGld",
       "yzTgpOK",
-      "wDTKlLR",
       "vbT0edV",
-      "VNT3n3x",
-      "9pTnm1v",
       "1wTxDGZ",
-      "l5Tpd8k",
-      "06TpxNa",
       "wDTKMX5",
       "wDTKl5P",
       "xMTxkm4",
@@ -67,9 +68,9 @@
     ]
   },
   "revision": {
-    "id": "NMTvdkK",
-    "created_at": "2022-03-15T09:05:24Z",
-    "updated_at": "2022-03-15T09:05:24Z",
+    "id": "wDTKY0e",
+    "created_at": "2022-03-15T09:10:17Z",
+    "updated_at": "2022-03-15T09:10:17Z",
     "embed_version": "4.9.1",
     "published_at": null,
     "fields": [
@@ -196,32 +197,55 @@
         "autotag": null
       },
       {
-        "id": 143607,
-        "dataColumn": {
-          "key": "default_address.country",
-          "label": "Country",
-          "dataType": "text"
-        },
+        "id": 140362,
+        "dataColumn": null,
         "parentId": null,
         "position": 1,
-        "type": "dropdown",
+        "type": "html",
         "stepId": 228625,
-        "default": "United Kingdom",
-        "label": "Your business is located within",
-        "placeholder": "Select a country...",
+        "default": "",
+        "label": "New custom HTML field",
+        "placeholder": "",
         "description": "",
         "enum": [
-          {
-            "value": "",
-            "label": ""
-          }
+
         ],
         "appearance": {
           "width": 12
         },
         "settings": {
-          "isCountryField": true,
-          "useAllCountries": false
+          "hideLabel": true,
+          "content": ""
+        },
+        "validations": [
+
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 342539,
+        "dataColumn": {
+          "key": "website__social_media_url",
+          "label": "Website \/ Social Media URL",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 10,
+        "type": "text",
+        "stepId": 228625,
+        "default": "",
+        "label": "Website \/ Social Media URL",
+        "placeholder": null,
+        "description": "",
+        "enum": [
+
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
         },
         "validations": [
           {
@@ -231,24 +255,17 @@
             "metadata": {
               "hiddenInApp": true
             }
-          },
-          {
-            "operator": "equals",
-            "comparand": "United Kingdom",
-            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
-            "metadata": {
-            }
           }
         ],
         "sensitive": null,
-        "preset": "country",
+        "preset": null,
         "autotag": null
       },
       {
         "id": 110607,
         "dataColumn": null,
         "parentId": null,
-        "position": 10,
+        "position": 11,
         "type": "divider",
         "stepId": 228625,
         "default": "",
@@ -262,8 +279,8 @@
           "width": 12
         },
         "settings": {
-          "verticalMargin": 20,
-          "hideLabel": true
+          "hideLabel": true,
+          "verticalMargin": 20
         },
         "validations": [
 
@@ -280,7 +297,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 11,
+        "position": 12,
         "type": "radio",
         "stepId": 228625,
         "default": "",
@@ -341,7 +358,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 12,
+        "position": 13,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -367,7 +384,7 @@
         "id": 370402,
         "dataColumn": null,
         "parentId": null,
-        "position": 13,
+        "position": 14,
         "type": "divider",
         "stepId": 228625,
         "default": "",
@@ -381,8 +398,8 @@
           "width": 12
         },
         "settings": {
-          "verticalMargin": 20,
-          "hideLabel": true
+          "hideLabel": true,
+          "verticalMargin": 20
         },
         "validations": [
 
@@ -399,7 +416,7 @@
           "dataType": "boolean"
         },
         "parentId": null,
-        "position": 14,
+        "position": 15,
         "type": "checkbox",
         "stepId": 228625,
         "default": "",
@@ -429,6 +446,55 @@
         "autotag": null
       },
       {
+        "id": 143607,
+        "dataColumn": {
+          "key": "default_address.country",
+          "label": "Country",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "dropdown",
+        "stepId": 228625,
+        "default": "United Kingdom",
+        "label": "Your business is located within",
+        "placeholder": "Select a country...",
+        "description": "",
+        "enum": [
+          {
+            "value": "",
+            "label": ""
+          }
+        ],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "isCountryField": true,
+          "useAllCountries": false
+        },
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          },
+          {
+            "operator": "equals",
+            "comparand": "United Kingdom",
+            "errorMessage": "If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.",
+            "metadata": {
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": "country",
+        "autotag": null
+      },
+      {
         "id": 105435,
         "dataColumn": {
           "key": "default_address.company",
@@ -436,7 +502,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 2,
+        "position": 3,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -473,7 +539,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 3,
+        "position": 4,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -510,7 +576,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 4,
+        "position": 5,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -540,7 +606,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 5,
+        "position": 6,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -577,7 +643,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 6,
+        "position": 7,
         "type": "dropdown",
         "stepId": 228625,
         "default": "",
@@ -616,7 +682,7 @@
           "dataType": "text"
         },
         "parentId": null,
-        "position": 7,
+        "position": 8,
         "type": "text",
         "stepId": 228625,
         "default": "",
@@ -653,7 +719,7 @@
           "dataType": "phone"
         },
         "parentId": null,
-        "position": 8,
+        "position": 9,
         "type": "phone",
         "stepId": 228625,
         "default": "",
@@ -686,43 +752,6 @@
         ],
         "sensitive": null,
         "preset": "phone_number",
-        "autotag": null
-      },
-      {
-        "id": 342539,
-        "dataColumn": {
-          "key": "website__social_media_url",
-          "label": "Website \/ Social Media URL",
-          "dataType": "text"
-        },
-        "parentId": null,
-        "position": 9,
-        "type": "text",
-        "stepId": 228625,
-        "default": "",
-        "label": "Website \/ Social Media URL",
-        "placeholder": null,
-        "description": "",
-        "enum": [
-
-        ],
-        "appearance": {
-          "width": 12
-        },
-        "settings": {
-        },
-        "validations": [
-          {
-            "operator": "not_blank",
-            "comparand": "",
-            "errorMessage": "Must not be blank",
-            "metadata": {
-              "hiddenInApp": true
-            }
-          }
-        ],
-        "sensitive": null,
-        "preset": null,
         "autotag": null
       },
       {
