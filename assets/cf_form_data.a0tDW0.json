@@ -45,28 +45,29 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "06TpxNa",
+      "yzTgpOK",
+      "wDTKlLR",
+      "xMTxkm4",
+      "vbT0edV",
+      "VNT3n3x",
+      "wDTKl5P",
+      "9pTnm1v",
+      "1wTxDGZ",
+      "Z6Trnag",
       "l5Tpd8k",
       "wDTKMX5",
-      "Z6Trnag",
-      "1wTxDGZ",
-      "9pTnm1v",
       "6XTxZ4x",
       "K0TgERA",
-      "wDTKl5P",
-      "VNT3n3x",
-      "vbT0edV",
-      "xMTxkm4",
-      "wDTKlLR",
-      "yzTgpOK",
       "akTzqzn",
       "ErTA0An",
       "9pTn8nm"
     ]
   },
   "revision": {
-    "id": "l5Tpd8k",
-    "created_at": "2022-03-15T08:49:05Z",
-    "updated_at": "2022-03-15T08:49:05Z",
+    "id": "06TpxNa",
+    "created_at": "2022-03-15T08:56:02Z",
+    "updated_at": "2022-03-15T08:56:02Z",
     "embed_version": "4.9.1",
     "published_at": null,
     "fields": [
@@ -181,7 +182,7 @@
           "width": 12
         },
         "settings": {
-          "content": "<p>Apply for your Animology trade account below today. We will check your details and approve your account within 24 hours* to get you up and running as quickly as possible.<\/p>\n<p><strong>Please note that online trade accounts are only available for businesses within the UK.<\/strong> If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.<\/p>",
+          "content": "<p>Apply for your Animology trade account below today. We will check your details and approve your account within 24 hours* to get you up and running as quickly as possible.<br \/><br \/><strong>Please note that online trade accounts are only available for <span style=\"text-decoration: underline;\">pet specialist<\/span> businesses within the UK.<\/strong> <br \/><br \/>If you are outside of the UK, please contact us at shop@animology.co.uk who will help you locate your nearest distributor.<\/p>",
           "fontSize": 14,
           "hideLabel": true
         },
@@ -253,7 +254,7 @@
         "type": "radio",
         "stepId": 228625,
         "default": "",
-        "label": "Please select the option that best describes  your company",
+        "label": "Please select the option that best describes  your business",
         "placeholder": "",
         "description": "",
         "enum": [
@@ -282,11 +283,11 @@
           "width": 12
         },
         "settings": {
+          "end": 10,
+          "start": 1,
           "enumType": "list",
           "direction": "column",
-          "separateValues": false,
-          "start": 1,
-          "end": 10
+          "separateValues": false
         },
         "validations": [
           {
