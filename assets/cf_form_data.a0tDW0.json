@@ -45,18 +45,19 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "3qTeGld",
       "06TpxNa",
-      "yzTgpOK",
-      "wDTKlLR",
-      "xMTxkm4",
-      "vbT0edV",
-      "VNT3n3x",
-      "wDTKl5P",
-      "9pTnm1v",
-      "1wTxDGZ",
-      "Z6Trnag",
-      "l5Tpd8k",
       "wDTKMX5",
+      "l5Tpd8k",
+      "1wTxDGZ",
+      "9pTnm1v",
+      "wDTKl5P",
+      "VNT3n3x",
+      "vbT0edV",
+      "xMTxkm4",
+      "wDTKlLR",
+      "yzTgpOK",
+      "Z6Trnag",
       "6XTxZ4x",
       "K0TgERA",
       "akTzqzn",
@@ -65,9 +66,9 @@
     ]
   },
   "revision": {
-    "id": "06TpxNa",
-    "created_at": "2022-03-15T08:56:02Z",
-    "updated_at": "2022-03-15T08:56:02Z",
+    "id": "3qTeGld",
+    "created_at": "2022-03-15T09:01:38Z",
+    "updated_at": "2022-03-15T09:01:38Z",
     "embed_version": "4.9.1",
     "published_at": null,
     "fields": [
@@ -253,26 +254,26 @@
         "position": 10,
         "type": "radio",
         "stepId": 228625,
-        "default": "",
+        "default": null,
         "label": "Please select the option that best describes  your business",
         "placeholder": "",
         "description": "",
         "enum": [
           {
-            "value": "Dog Walker",
-            "label": "Dog Walker"
-          },
-          {
             "value": "Groomer",
             "label": "Groomer"
           },
           {
-            "value": "Pet Specialist",
-            "label": "Pet Specialist"
-          },
-          {
             "value": "Vet",
             "label": "Vet"
+          },
+          {
+            "value": "Bricks & Mortar Store",
+            "label": "Bricks & Mortar Store"
+          },
+          {
+            "value": "Dog Walker",
+            "label": "Dog Walker"
           },
           {
             "value": "Other (Please specify below)",
