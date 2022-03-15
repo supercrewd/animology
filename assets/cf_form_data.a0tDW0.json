@@ -45,14 +45,15 @@
     "created_at": "2021-09-10T10:06:48Z",
     "updated_at": "2022-02-11T11:12:49Z",
     "revision_ids": [
+      "ErTAMyN",
       "wDTKY0e",
+      "3qTeGld",
+      "wDTKlLR",
+      "9pTnm1v",
+      "l5Tpd8k",
       "NMTvdkK",
       "06TpxNa",
-      "l5Tpd8k",
-      "9pTnm1v",
       "VNT3n3x",
-      "wDTKlLR",
-      "3qTeGld",
       "yzTgpOK",
       "vbT0edV",
       "1wTxDGZ",
@@ -68,9 +69,9 @@
     ]
   },
   "revision": {
-    "id": "wDTKY0e",
-    "created_at": "2022-03-15T09:10:17Z",
-    "updated_at": "2022-03-15T09:10:17Z",
+    "id": "ErTAMyN",
+    "created_at": "2022-03-15T09:12:36Z",
+    "updated_at": "2022-03-15T09:12:36Z",
     "embed_version": "4.9.1",
     "published_at": null,
     "fields": [
@@ -214,8 +215,8 @@
           "width": 12
         },
         "settings": {
-          "hideLabel": true,
-          "content": ""
+          "content": "",
+          "hideLabel": true
         },
         "validations": [
 
@@ -262,14 +263,14 @@
         "autotag": null
       },
       {
-        "id": 110607,
+        "id": 804467,
         "dataColumn": null,
         "parentId": null,
         "position": 11,
-        "type": "divider",
+        "type": "html",
         "stepId": 228625,
         "default": "",
-        "label": "New divider field",
+        "label": "New custom HTML field",
         "placeholder": "",
         "description": "",
         "enum": [
@@ -280,7 +281,7 @@
         },
         "settings": {
           "hideLabel": true,
-          "verticalMargin": 20
+          "content": ""
         },
         "validations": [
 
@@ -381,14 +382,14 @@
         "autotag": null
       },
       {
-        "id": 370402,
+        "id": 657350,
         "dataColumn": null,
         "parentId": null,
         "position": 14,
-        "type": "divider",
+        "type": "html",
         "stepId": 228625,
         "default": "",
-        "label": "New divider field",
+        "label": "New custom HTML field",
         "placeholder": "",
         "description": "",
         "enum": [
@@ -399,7 +400,7 @@
         },
         "settings": {
           "hideLabel": true,
-          "verticalMargin": 20
+          "content": ""
         },
         "validations": [
 
