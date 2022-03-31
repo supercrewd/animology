@@ -114,6 +114,7 @@
         "blocks": {
           "slider-3": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/banner1-2.jpg",
               "alignment": "center center",
