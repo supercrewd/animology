@@ -196,7 +196,7 @@
           "extra_tab_content": "",
           "extra_tab_content_2": "",
           "social_sharing": true,
-          "enable_payment_button": true,
+          "enable_payment_button": false,
           "add_to_cart_width": "small"
         }
       },
