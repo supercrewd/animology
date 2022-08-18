@@ -130,7 +130,7 @@
           "f6c02def-56c3-44fc-9e11-5f2a29fc8553": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner6-1.jpg",
+              "image": "shopify:\/\/shop_images\/banner6-1_96a5b89c-4b0c-4c07-b286-eddccd5f97b6.jpg",
               "alignment": "center center",
               "overlay_opacity": 0,
               "color_text": "#ffffff",
@@ -138,7 +138,7 @@
               "slide_heading": "",
               "text_1": "",
               "button_label": "",
-              "button_link": "shopify:\/\/collections\/vitamins-supplements"
+              "button_link": ""
             }
           },
           "slider-0": {
