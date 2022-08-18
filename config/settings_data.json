@@ -127,6 +127,20 @@
               "button_link": ""
             }
           },
+          "f6c02def-56c3-44fc-9e11-5f2a29fc8553": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner6-1.jpg",
+              "alignment": "center center",
+              "overlay_opacity": 0,
+              "color_text": "#ffffff",
+              "text_alignment": "center",
+              "slide_heading": "",
+              "text_1": "",
+              "button_label": "",
+              "button_link": "shopify:\/\/collections\/vitamins-supplements"
+            }
+          },
           "slider-0": {
             "type": "image",
             "settings": {
@@ -169,28 +183,14 @@
               "button_label": "View Product",
               "button_link": "shopify:\/\/products\/puppy-love"
             }
-          },
-          "f6c02def-56c3-44fc-9e11-5f2a29fc8553": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/banner6.jpg",
-              "alignment": "center center",
-              "overlay_opacity": 0,
-              "color_text": "#ffffff",
-              "text_alignment": "center",
-              "slide_heading": "",
-              "text_1": "",
-              "button_label": "",
-              "button_link": "shopify:\/\/collections\/vitamins-supplements"
-            }
           }
         },
         "block_order": [
           "slider-3",
+          "f6c02def-56c3-44fc-9e11-5f2a29fc8553",
           "slider-0",
           "slider-2",
-          "slider-1",
-          "f6c02def-56c3-44fc-9e11-5f2a29fc8553"
+          "slider-1"
         ],
         "settings": {
           "slider_height": "small",
