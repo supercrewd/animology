@@ -364,7 +364,7 @@
         "settings": {
           "title": "New In",
           "featured_collection": "all-products",
-          "num_per_row": 3,
+          "num_per_row": 5,
           "num_rows": 1,
           "vendor_enable": false,
           "show_sale_circle": false,
